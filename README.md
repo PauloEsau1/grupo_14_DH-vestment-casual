@@ -1,2 +1,2 @@
-# grupo_14_DH-vestment-casual
-Proyecto para desarrollar un e-commerce (FULL-STACK by Digital House)
+# DH-vestment-casual
+Sitio WEB para la compra de ropa casual
