@@ -4,5 +4,5 @@ Sitio WEB para la compra de ropa casual
 
 
 ######  _Referencias_
-1. _https://www.liverpool.com.mx/tienda/home
+1. _https://www.liverpool.com.mx/tienda/home_
 1. https://www.levi.com.mx/_
