@@ -8,3 +8,13 @@ Sitio WEB para la compra de ropa casual
 >######  2. _https://www.levi.com.mx/_
 
 
+I think you should use an
+`<addr>` element here instead.
+
+```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
