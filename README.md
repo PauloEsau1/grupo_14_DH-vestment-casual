@@ -4,7 +4,7 @@ El sitio web esta diseñado para la venta de ropa en general que va dirigido tod
 La estructura principal de dicho sitio se encuentra estructurado en página de inicio, detalles de producto, categorias de ropa, carrito de compras, inicio de sesión y registro.
 
 ###### Por: `Eric Gómez Hernández` y `Paulo Esaú Peredo Nava`
-###### Mentor: Alfonso Banda
+###### Mentor: `Alfonso Banda`
 
 
 #####  _Referencias_
