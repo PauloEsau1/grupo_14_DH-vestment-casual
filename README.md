@@ -2,7 +2,7 @@
 Sitio WEB para la compra de ropa casual
 El sitio web esta diseñado para la venta de ropa en general que va dirigido todo público desde niños hasta adultos, las prendas se encuentran categorizadas en ....., limitandonos a la venta de ropa interiror, calzado, ropa para bebé y accesorios.
 La estructura principal de dicho sitio se encuentra estructurado en página de inicio, detalles de producto, categorias de ropa, carrito de compras, inicio de sesión y registro.
-
+--
 ###### Por: `Eric Gómez Hernández` y `Paulo Esaú Peredo Nava`
 ###### Mentor: `Alfonso Banda`
 
