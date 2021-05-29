@@ -1,7 +1,8 @@
 # DH-vestment-casual
 Sitio WEB para venta de ropa casual, dispone de 5 páginas: página de inicio, categoorías de ropa(dividido entre dama y caballero), detalles del producto, carrito de compras y la página para iniciar sesión ó registrarse(contenidas dentro de la misma página).
 - La venta de ropa es exclusiva para dama y caballero, con un promedio de edad entre 20 - 50 años.
-- Con una gran diversidad de modelos, tallas y colores a elección del cliente.  :dart: ***Jean's, playeras, pants y chamarras***
+- Con una gran diversidad de modelos, tallas y colores a elección del cliente.  
+   :dart: ***Jean's, playeras, pants y chamarras***
 - Dirigido al publico en general.
 ---
 ###### `Proyecto elaborado por: `
