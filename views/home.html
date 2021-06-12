@@ -7,41 +7,89 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css\styles.css"/>
     <link rel="stylesheet" href="css\normalize.css"/>
+    <script src="https://kit.fontawesome.com/f519fb565c.js" crossorigin="anonymous"></script>
     <title>DH-vestment-casual</title>
 </head>
 
 <body >
-    <header >
+    <header class="main-header" id="main-header-footer">
         <!-- encabezado HOME-->
-        <span class="contenedor_header">
-            <img class="Logo" src="images\logo.png" alt="Logo de la tienda">
-            <nav>
-                <ul class="menu_header">
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#Hombre">Hombre</a></li>
-                    <li><a href="#Mujer">Mujer</a></li>
-                </ul>
-            </nav>
-        </span>
+        <div class="main-header-logo">
+            <img class="main-logo" src="images\logo.png" alt="Logo de la tienda">         
+        </div>
+        <div class="main-header-opciones">
+            <div class="main-header-search-carrito-login">
+                <div id="main-header-search">
+                    <a><i class="fas fa-search"></i></a>
+                    <input id="search" type="text" placeholder="Búsqueda"/>
+                </div>   
+                <i class="fas fa-shopping-cart" id="iconos-shopping-user"></i> 
+                <i class="fas fa-user" id="iconos-shopping-user"></i>
+            </div>              
+            <div class="main-header-menu">
+                <nav class="main-header-menu-navbar">
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Hombre">Hombre</a></li>
+                        <li><a href="#Mujer">Mujer</a></li>
+                    </ul>
+                </nav>            
+            </div>  
+        </div>    
     </header>
+    <section id="section-path-nav">
+        <div>
+            <h3>Home | </h3>
+        </div>
+    </section>    
     <section>
         <!-- contenido del carrusel-->
     </section>
     <section>
         <!-- contenido de los productos notables-->
     </section>
-    <footer>
+    <footer class="main-footer" id="main-header-footer">
         <!-- contenido del pie de pagina-->
-        <span class="contenedor_footer">
-            <img class="Logo" src="images\logo.png" alt="Logo de la tienda">
-            <nav>
-                <ul class="menu_footer" >
-                    <li><a id="Tipografia_footer" href="#Home">Acerca de Nosotros</a></li>
-                    <li><a id="Tipografia_footer" href="#Hombre">Aviso de privacidad</a></li>
+        <div class="main-footer-1er">
+            <div class="main-footer-logo">
+                <img class="main-logo" src="images\logo.png" alt="Logo de la tienda">         
+            </div>
+            <div class="main-footer-menu01">
+                <nav class="main-footer-menu01-navbar">
+                    <ul>
+                        <li><a id="Tipografia_footer" href="#AcercaNosotros">Acerca de Nosotros</a></li>
+                        <li><a id="Tipografia_footer" href="#AvisoPrivacidad">Aviso de privacidad</a></li>
+                    </ul>
+                </nav>            
+            </div>    
+            <div class="main-footer-menu02">
+                <nav class="main-footer-menu02-navbar">
+                    <ul>
+                        <li><a id="Tipografia_footer" href="#DondeComprar"><i class="fas fa-map-marker-alt"></i> ¿ Dondé comprar ?</a></li>
+                        <li><a id="Tipografia_footer" href="#Facturacion">Facturación</a></li>
+                    </ul>
+                </nav>            
+            </div>    
+            <div class="main-footer-menu03">
+                <nav class="main-footer-menu03-navbar">
+                    <ul>
+                        <li><a id="Tipografia_footer" href="#Cambios-Devoluciones">Cambios / Devoluciones</a></li>
+                    </ul>
+                </nav>            
+            </div>     
+        </div>
+        <div class="main-footer-2do">
+            <nav class="main-footer-redes">
+                <ul>
+                    <li><a> <i class="fas fa-at"></i></a></li>
+                    <li><a> <i class="fas fa-phone"></i></a></li>
+                    <li><a> <i class="fab fa-whatsapp"></i></a></li>
+                    <li><a> <i class="fab fa-facebook-square"></i></a></li>
+                    <li><a> <i class="fab fa-twitter-square"></i></a></li>
+                    <li><a> <i class="fab fa-instagram-square"></i></a></li>
                 </ul>
-            </nav>            
-        </span>
-
+            </nav>              
+        </div>    
     </footer>
 </body>
 </html>
