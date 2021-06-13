@@ -20,15 +20,17 @@ body {
     top: 0;  
 }
 .main-header-opciones {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
-.main-header-search-carrito-login {
+.main-header-search-carrito-login,
+.main-header-menu {
     margin: auto;
     display: flex;
     align-items: center;
-    width: 220px;
+    width: 80%;
     justify-content: space-between;
 }
 #main-header-search {
@@ -47,7 +49,7 @@ body {
 #search {
     border:0;
     height: calc(100% - 4px);
-    width: 105px;
+    width: 70%;
     border-radius: 50px;
     font-size: 14px;
 }
@@ -65,7 +67,7 @@ body {
 }
 .main-footer-1er {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .main-footer-2do ul {
     display:flex;
@@ -81,8 +83,21 @@ body {
 .main-footer-menu01,.main-footer-menu02 {
     border-right: solid rgb(143, 143, 143) 2px;
 }
-.main-header-menu-navbar  ul{
+.main-footer-menu01, .main-footer-menu02, 
+.main-footer-menu03 {
+    width: 33%;
     display: flex;
+    justify-content: center;
+}
+.main-header-menu-navbar {
+    width: 100%;
+}
+.main-header-menu-navbar ul{
+    display: flex;
+    width: 100%;
+}
+.main-header-menu-navbar li {
+    width: 33%;
 }
 .main-header-menu-navbar  ul, .main-footer-menu01-navbar  ul,
 .main-footer-menu02-navbar  ul, .main-footer-menu03-navbar  ul,
@@ -140,13 +155,51 @@ body {
     .main-footer  .main-logo {
         display:block;
     }
+    #main-header-search {
+        width: 65%;
+    }
+    #search {
+        width: 80%;
+    }
     #Tipografia_footer {
         font-size:13px;
     }
 }
+@media (min-width: 700px) {
+    .main-header-opciones {
+        flex-direction: row-reverse;
+    }
+    .main-header-search-carrito-login,
+    .main-header-menu {
+        padding: 15px;
+    }
+    .main-header-search-carrito-login {
+        justify-content: flex-end;
+    }
+    .main-header-menu-navbar a {
+        font-size: 15px;
+    }
+    #iconos-shopping-user {
+        padding: 0 10px;
+    }
+    #main-header-footer {
+        padding: 8px 30px;
+    }
+    #section-path-nav {
+        padding: 5px 30px;
+    }
+    .main-footer-redes a {
+        font-size: 25px;
+    }
+
+}
+
 @media (min-width: 1200px) {
     .main-footer, .main-header {
         max-width: 1200px;
         border:rgb(127, 183, 211) solid 5px;
+    }
+    #section-path-nav {
+        margin-top: 110px;
     }
 }
