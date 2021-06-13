@@ -4,10 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\styles.css">
     <title>Detalle</title>
-    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
-    <div>detalle</div>
+    <header >
+        <!-- encabezado HOME-->
+        <span class="contenedor_header">
+            <img class="Logo" src="images\logo.png" alt="Logo de la tienda">
+            <nav>
+                <ul class="menu_header">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Hombre">Hombre</a></li>
+                    <li><a href="#Mujer">Mujer</a></li>
+                </ul>
+            </nav>
+        </span>
+    </header>
+    <div class=indicador-detalle>
+        <div>Home | Hombre | Categoría | Detalle del producto</div>
+    </div>
+    <div class="cuerpo-detalle">
+        <div class="imagen-detalle">
+            <img class="detalle-imagen" src="images\ropa.png" alt="camisa" >
+
+        </div>
+        <div class="descripcion-producto">
+            <div>Nombre del producto</div>
+            <div>$800</div>
+            <div>Descripción corta del producto</div>
+            <div class="color">
+                <div>Color:</div>
+                <div>Negro</div>
+                <div class="circulo_color"></div>
+            </div>
+            <div>Talla</div>
+            <div class="tallas">
+                <div class="cuadros">ECH</div>
+                <div class="cuadros">CH</div>
+                <div class="cuadros">M</div>
+                <div class="cuadros">G</div>
+                <div class="cuadros">EG</div>
+            </div>
+            <div class="a_carrito">
+                <select class="cantidad_carrito">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <button type="submit" class="mandar_carrito">
+                    <img class="imagen_carrito" src="images\pngwing.com.png" alt="carrito">
+                    Agregar a carrito
+                </button>
+            </div>
+
+        </div>
+        <div>
+
+        </div>
+    </div>
+    <div class="opciones_imagen">
+        <img class="imagenes_opcion" src="images\ropa.png" alt="camisa">
+        <img class="imagenes_opcion" src="images\ropa.png" alt="camisa">
+        <img class="imagenes_opcion" src="images\ropa.png" alt="camisa">
+        <img class="imagenes_opcion" src="images\ropa.png" alt="camisa">
+    </div>
 </body>
 </html>

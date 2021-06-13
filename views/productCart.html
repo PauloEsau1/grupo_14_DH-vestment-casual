@@ -4,10 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css\styles.css">
     <title>Carrito</title>
 </head>
 <body>
-    <div>producto</div>
+    <header >
+        <!-- encabezado HOME-->
+        <span class="contenedor_header">
+            <img class="Logo" src="images\logo.png" alt="Logo de la tienda">
+            <nav>
+                <ul class="menu_header">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Hombre">Hombre</a></li>
+                    <li><a href="#Mujer">Mujer</a></li>
+                </ul>
+            </nav>
+        </span>
+    </header>
+    <div class=indicador-carrito>
+        <div class="ind">Home | Carrito de compras</div>
+    </div>
+    <div class="resumen">
+        <img class="imagen-producto" src="images\ropa.png" alt="producto" >
+        <div>
+            <div class= "carrito-datos">Nombre del producto</div>
+            <div class= "carrito-datos">Eliminar</div>
+        </div>
+        <div class="pos">
+            <div class= "carrito-dato">Forma de entrega</div>
+            <div> Entrega a domicilio</div>
+            <div> Día de entrega</div>
+        </div>
+        <div class="pos">
+            <div class= "carrito-dato">Precio</div>
+            <div> $800</div>
+        </div>
+        <div class="pos">
+            <div class= "carrito-dato">Cantidad</div>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <div class="pos">
+            <div class= "carrito-dato">Total</div>
+            <div> $1700</div>
+        </div>
+    </div>
+    <div class="e">
+        <div class="Datos-resumen">
+            <img class = "min" src="images\tel.png" alt="tel">
+            Teléfono: 1234567890</div>
+        <div class="resumen-de-compra">
+            <div>Resumen de compras</div>
+            <label>Subtotal
+                <div class="espacio">$1600</div>
+            </label>
+            <label>Envio  
+                <div class="espacio">$100</div>
+            </label>
+            <label>Total  
+                <div class="espacio">$1700</div>
+            </label>
+            <div class="pagar">
+                <div>Pagar</div>
+            </div>
+        </div>
+        
+    </div>
 </body>
 </html>
