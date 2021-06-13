@@ -9,18 +9,30 @@
     
 </head>
 <body>
-    <header >
+    <header class="main-header" id="main-header-footer">
         <!-- encabezado HOME-->
-        <span class="contenedor_header">
-            <img class="Logo" src="images\logo.png" alt="Logo de la tienda">
-            <nav>
-                <ul class="menu_header">
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#Hombre">Hombre</a></li>
-                    <li><a href="#Mujer">Mujer</a></li>
-                </ul>
-            </nav>
-        </span>
+        <div class="main-header-logo">
+            <img class="main-logo" src="images\logo.png" alt="Logo de la tienda">         
+        </div>
+        <div class="main-header-opciones">
+            <div class="main-header-search-carrito-login">
+                <div id="main-header-search">
+                    <a><i class="fas fa-search"></i></a>
+                    <input id="search" type="text" placeholder="Búsqueda"/>
+                </div>   
+                <i class="fas fa-shopping-cart" id="iconos-shopping-user"></i> 
+                <i class="fas fa-user" id="iconos-shopping-user"></i>
+            </div>              
+            <div class="main-header-menu">
+                <nav class="main-header-menu-navbar">
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Hombre">Hombre</a></li>
+                        <li><a href="#Mujer">Mujer</a></li>
+                    </ul>
+                </nav>            
+            </div>  
+        </div>    
     </header>
     <div class=indicador-detalle>
         <div>Home | Hombre | Categoría | Detalle del producto</div>
