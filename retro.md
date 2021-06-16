@@ -1,0 +1,2 @@
+- Se necesita seguir puliendo más a detalle algunos aspectos del proyecto e ir retroalimentando las tareas que cada uno hace durante el sprint.
+- Continuar reuniones de equipo para hablar sobre los avances que se llevan y aclarar dudas.
