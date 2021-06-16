@@ -16,7 +16,7 @@ body {
     width: 100vw;
 }
 .main-header {
-    position: fixed;
+    position: relative;
     left: 0;
     top: 0;  
 }
@@ -137,9 +137,9 @@ body {
     padding: 1px;
     width: 100vw;
 }
-
+/* **************************************************/
 #section-path-nav {
-    margin-top: 100px;
+    margin-top: 0px;
     padding: 5px;
 }
 #section-path-nav h3 {
@@ -333,6 +333,7 @@ body {
 .espacio{/*carrito*/
     margin-left: 30%;
 }
+/* **************************************************/
 .indicador-detalle{/*detalle*/
     display: flex;
     background-color: rgba(202, 227, 227, 1);
@@ -454,6 +455,7 @@ body {
     width: 19%;
     height: 80%;
 }
+/* ****************************************media560**********/
 @media (min-width: 560px) {
     .main-footer  .main-logo {
         display:block;
@@ -580,6 +582,7 @@ body {
     .espacio{/*carrito*/
         margin-left: 30%;
     }
+    /* **************************************************/
     .indicador-detalle{/*detalle*/
         display: flex;
         background-color: rgba(202, 227, 227, 1);
@@ -701,8 +704,9 @@ body {
         width: 19%;
         height: 80%;
     }
-    
+
 }
+/* *******************************************media700*******/
 @media (min-width: 700px) {
     .main-header-opciones {
         flex-direction: row-reverse;
@@ -844,6 +848,7 @@ body {
     .espacio{/*carrito*/
         margin-left: 30%;
     }
+    /* **************************************************/
     .indicador-detalle{/*detalle*/
         display: flex;
         background-color: rgba(202, 227, 227, 1);
@@ -965,13 +970,13 @@ body {
         height: 90%;
     }
 }
-
+/* ************************************************media1200**/
 @media (min-width: 1200px) {
     .main-footer, .main-header {
         max-width: 1200px;
     }
     #section-path-nav {
-        margin-top: 110px;
+        margin-top: 0px;
     }
     #section-cuerpo, #carrusel img,
     #opciones-carrusel, #destacados {
@@ -979,7 +984,7 @@ body {
     }
     #carrusel img, #carrusel h4,
     #opciones-carrusel, #destacados {
-        margin-left: 200px;
+        margin-left: 180px;
     }
     /* ********************************** */
     .indicador-carrito{/*carrito*/
