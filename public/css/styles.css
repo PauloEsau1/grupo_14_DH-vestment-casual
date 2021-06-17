@@ -232,7 +232,7 @@ body {
 .indicador-carrito{/*carrito*/
     display: flex;
     background-color: rgba(202, 227, 227, 1);
-    width: 36%;
+    width: 50%;
     height: 10%;
     border-radius:30px;
     justify-content: center;
@@ -244,7 +244,7 @@ body {
     background-color: rgba(196, 196, 196, 1);
     border:2px black solid;
     width: 100%;
-    height: 38%;
+    height: 40%;
     margin-top: 60px;
     justify-content:flex-start;
     justify-content: space-between;
@@ -261,16 +261,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-left: 15px;
-    font-size: 12px;
-    margin-bottom: 3%;
+    font-size: 60%;
+    margin-bottom: 5%;
 
 }
 .carrito-dato{/*carrito*/
     display: flex;
     justify-content:space-between;
     align-items: center;
-    font-size: 12px;
-    margin-bottom: 3%;
+    font-size: 50%;
+    margin-bottom: 5%;
 
 }
 .pos{/*carrito*/
@@ -284,7 +284,7 @@ body {
     background-color: rgba(222, 219, 219, 1);
     border:2px black solid;
     width: 40%;
-    height: 70%;
+    height: 60%;
     margin-left: 30%;
     flex-direction: column;
     justify-content:space-between;
@@ -295,22 +295,22 @@ body {
     display: flex;
     justify-content: left;
     padding-left: 10px;
-    font-size: 15px;
+    font-size: 70%;
 }
 .resumen-de-compra > div{/*carrito*/
     display: flex;
     justify-content: center;
-    font-size: 15px;
+    font-size: 75%;
 }
 .pagar{/*carrito*/
     display: flex;
     background-color: rgba(65, 82, 236, 1);
     width: 100% ;
-    height:50px;
+    height:30%;
     justify-content:center;
     align-items: center;
     position: relative;
-    top:27.9%;
+    top:34%;
 }
 .Datos-resumen{/*carrito*/
     display: flex;
@@ -341,18 +341,19 @@ body {
 .indicador-detalle{/*detalle*/
     display: flex;
     background-color: rgba(202, 227, 227, 1);
-    width: 380px;
+    width: 60%;
     height: 30px;
     border-radius:30px;
     justify-content: center;
     align-items: center;
+    font-size: 60%;
 
 
 }
 .imagen-detalle{/*detalle*/
     background-color: white;
-    width: 40%;
-    height: 60%;
+    width: 43%;
+    height: 50%;
     margin-top: 60px;
     margin-left: 4%;
     border: black solid 2px;
@@ -382,7 +383,7 @@ body {
     
 }
 .descripcion-producto > div{/*detalle*/
-    font-size: 16px;
+    font-size: 80%;
 }
 .color{/*detalle*/
     display: flex;
@@ -395,7 +396,7 @@ body {
 
 }
 .color > div{
-    font-size: 16px;
+    font-size: 90%;
 }
 .circulo_color{/*detalle*/
     width: 14%;
@@ -419,13 +420,13 @@ body {
     justify-content: center;
     align-items: center;
     border: black 1px solid;
-    font-size: 14px;
+    font-size: 75%;
 }
 .a_carrito{/*detalle*/
     display: flex;
     flex-direction: row;
     width: 89%;
-    height:8%;
+    height:9%;
 }
 .cantidad_carrito{/*detalle*/
    width: 20%;
@@ -434,10 +435,10 @@ body {
 }
 .mandar_carrito{/*detalle*/
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 89%;  
-    font-size: 14px;
+    justify-content: center;
+    width: 80%;  
+    height: 100%;
+    font-size: 90%;
     background-color: blue;
     border: 1px solid black;
 
@@ -510,6 +511,17 @@ body {
     height: 90%;
     background-color: rgb(241, 206, 142);
 }
+.categorias-productos{
+    width: 20%;
+    height: 20%;
+    background-color: brown;
+
+}
+.categorias-imagenes{
+    width: 100%;
+    height: 100%;
+
+}
 
 
 
@@ -529,6 +541,31 @@ body {
     }
 /* ****************************************************** */ 
 
+    .carrito-datos{/*carrito*/
+        font-size: 75%;
+        margin-bottom: 10%;
+    }
+    .carrito-dato{/*carrito*/
+        font-size: 70%;
+        margin-bottom: 10%;
+    }
+    .resumen-de-compra > label{/*carrito*/
+        display: flex;
+        justify-content: left;
+        padding-left: 10px;
+        font-size: 90%;
+    }
+    .resumen-de-compra > div{/*carrito*/
+        display: flex;
+        justify-content: center;
+        font-size: 90%;
+    }
+    .pagar{/*carrito*/
+        top:34.5%;
+    }
+    .Datos-resumen{/*carrito*/
+        font-size: 18px;
+    }
 }
 /* *******************************************media700*******/
 @media (min-width: 700px) {
@@ -560,16 +597,37 @@ body {
     /* ************************************************** */
 
     .carrito-datos{/*carrito*/
+        font-size: 80%;
         margin-bottom: 5%;
     }
     .carrito-dato{/*carrito*/
         margin-bottom: 5%;
+        font-size: 80%;
     }
     
     .espacio{/*carrito*/
         margin-left: 30%;
     }
+    
+    .resumen-de-compra > label{/*carrito*/
+        display: flex;
+        justify-content: left;
+        padding-left: 10px;
+        font-size: 90%;
+    }
+    .resumen-de-compra > div{/*carrito*/
+        display: flex;
+        justify-content: center;
+        font-size: 90%;
+    }
+    .pagar{/*carrito*/
+        top:34.5%;
+    }
+    .Datos-resumen{/*carrito*/
+        font-size: 18px;
+    }
     /* **************************************************/
+ 
     .imagen-detalle{/*detalle*/
         height: 70%;
     }
@@ -637,13 +695,32 @@ body {
         height: 38%;
     }
     .carrito-datos{/*carrito*/
-        font-size: 16px;
-        margin-bottom: 5%;
-    
+        font-size: 90%;
+        margin-bottom: 10%;
     }
     .carrito-dato{/*carrito*/
-        font-size: 16px;
-        margin-bottom: 5%;
+        font-size: 90%;
+        margin-bottom: 10%;
+    }
+    .resumen-de-compra{
+        width: 30%;
+    }
+    .resumen-de-compra > label{/*carrito*/
+        display: flex;
+        justify-content:center;
+        padding-left: 10px;
+        font-size: 90%;
+    }
+    .resumen-de-compra > div{/*carrito*/
+        display: flex;
+        justify-content: center;
+        font-size: 90%;
+    }
+    .pagar{/*carrito*/
+        top:34.5%;
+    }
+    .Datos-resumen{/*carrito*/
+        font-size: 24px;
     }
     /* ********************************** */
 
@@ -655,6 +732,9 @@ body {
         width: 30%;
         height: 72%;
     }
+    .descripcion-producto > div{/*detalle*/
+        font-size: 100%;
+    }
     .color{/*detalle*/
         display: flex;
         width: 60%;
@@ -663,6 +743,16 @@ body {
         align-items:flex-start;
         
     
+    }
+    .indicador-detalle{/*detalle*/
+    width: 40%;
+    height: 30px;
+    border-radius:30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 80%;
+
+
     }
     .tallas{/*detalle*/
         height: 20%;
