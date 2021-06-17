@@ -1,17 +1,19 @@
-* {
+** {
     box-sizing: border-box;
     padding: 0;
     margin: 0;      
 }
 
-a {/* LOGIN (ADRIAN) */
+a {
     color: black;
     text-decoration: none;
 }
 
-article{/* LOGIN (ADRIAN) */
+article{
     margin-top: 100px;
     margin-bottom: 75px;
+    background-image: url(images/carrusel_01.jpg);
+    background-size: cover;
 }
 
 body {
@@ -19,7 +21,7 @@ body {
     font-size: medium;
 }
 
-button {/* LOGIN (ADRIAN) */
+button {
     background-color: lightgray;
     border: none;
     font-weight: 400;
@@ -30,7 +32,7 @@ button {/* LOGIN (ADRIAN) */
     
 }
 
-form {/* LOGIN (ADRIAN) */
+form {
     display: block;
     padding: 5% 0 5% 0;
     text-align: center;
@@ -38,48 +40,53 @@ form {/* LOGIN (ADRIAN) */
 
 }
 
-.info {/* LOGIN (ADRIAN) */
+.info {
     font-weight: bold;
     font-size: 0.75rem;
 }
 
-input {/* LOGIN (ADRIAN) */
+input {
     height: fit-content;
 }
-h2 {/* LOGIN (ADRIAN) */
+h2 {
     font-weight: bold;
     font-size: 1.2em;
     text-align: center;
     font-style: italic;
 }
 
-h3 {/* LOGIN (ADRIAN) */
+h3 {
     font-size: 1em;
     font-weight: 300;
 }
 
-label {/* LOGIN (ADRIAN) */
-    align-items: center;
-    display:flex;
-    justify-content: space-between;
-    margin: 15px;
-    padding: 0 5%;
+input {
+    margin: 0 10px;
 }
 
-label a {/* LOGIN (ADRIAN) */
+label {
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    margin: 15px;
+    padding: 0 3%;
+    flex-wrap: wrap;
+}
+
+label a {
     text-decoration: underline;
 }
 
-label p {/* LOGIN (ADRIAN) */
-    min-width: 28%;
+label p {
+    width: 30%;
     text-align: left;
 }
 
-label span, form span {/* LOGIN (ADRIAN) */
+label span, form span {
     color: red;
 }
 
-.login {/* LOGIN (ADRIAN) */
+.login {
     margin-bottom: 15px;
 }
 
@@ -227,18 +234,47 @@ label span, form span {/* LOGIN (ADRIAN) */
     padding: 2px;
 }
 
-.signup {/* LOGIN (ADRIAN) */
+.signup {
     margin-top: 10px;
 }
 
-.subtitle {/* LOGIN (ADRIAN) */
+.subtitle {
     background-color: lightgrey;
     padding: 10px;
 }
 
+#tnc-statement {
+    width: 50%;
+    text-align: center;
+}
+
+@media (max-width: 325px) {
+    label{
+        justify-content: center;
+    } 
+    label p {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 430px) {
+    #tnc-statement {
+        text-align: center;
+        width: 30%;
+    }
+    #tnc {
+        justify-content: center;
+    }
+}
+
 @media (min-width: 500px) {
-    label {/* LOGIN (ADRIAN) */
-        padding: 0 20%;
+
+    button {
+        min-width: 35%
+    }
+
+    label p {
+        width: 20%;
     }
     .main-footer  .main-logo {
         display:block;
@@ -252,45 +288,53 @@ label span, form span {/* LOGIN (ADRIAN) */
     #Tipografia_footer {
         font-size:13px;
     }
-    #tnc {/* LOGIN (ADRIAN) */
+    #tnc {
         margin: auto 0;
     }
-    #tnc p {/* LOGIN (ADRIAN) */
+    /*#tnc p {
         width: 100%;
         text-align: right;
+    }*/
+}
+@media (min-width: 550px){
+    #tnc-statement {
+        width: auto;
+        margin: 0 1%
     }
 }
+
 @media (min-width: 700px) {
 
-    button {/* LOGIN (ADRIAN) */
+    button {
         background-color: lightgray;
         border: none;
         font-size: 1.3em;
-        min-width: 50%;
-        padding: 2% 10%;
+        min-width: 25%;
+        padding: 2% 7%;
         
         
     }
-    h2 {/* LOGIN (ADRIAN) */
+    h2 {
         font-size: 1.5em;
     }
-    h3 {/* LOGIN (ADRIAN) */
+    h3 {
         font-size: 1.3em;
     }
-    label {/* LOGIN (ADRIAN) */
-        display:flex;
+    label p {
+        width: 18%;
+        /*display:flex;
         justify-content: space-between;
         margin: 20px;
-        padding: 0 8%;
+        padding: 0 8%;*/
         
     }
-    .login {/* LOGIN (ADRIAN) */
+    /*.login {
         display: flex;
         min-height: 10vh;
         margin-bottom: 0;
         align-items: center;
         justify-content: center;
-    }
+    }*/
     .main-header-opciones {
         flex-direction: row-reverse;
     }
@@ -316,20 +360,59 @@ label span, form span {/* LOGIN (ADRIAN) */
     .main-footer-redes a {
         font-size: 25px;
     }
-    p {/* LOGIN (ADRIAN) */
+    p {
         font-size: 1.2em;
     }
-    .signup {/* LOGIN (ADRIAN) */
+    /*.signup {
         display: flex;
         margin-bottom: 100px;
         margin-top: 0;
         align-items: center;
         justify-content: center;
+    }*/
+}
+@media (min-width: 1000px){
+    label p {
+        width: 12%;
     }
 }
 
 @media (min-width: 1200px) {
+    article {
+        display: flex;
+        margin-bottom: 90px;
+    }
+
+    form {
+        width: 100%;
+    }
+.signup, .login {
+        width: 50%;
+        margin: 0;
+        border-left: dotted gray 2px;
+
+    }
+    
+    label {
+        margin: 2%;
+    }
+
+    label p {
+        height: fit-content;
+        margin: 0;
+        width: 20%;
+    }
+
+    button {
+        min-width: 10%;
+    }
+
     #section-path-nav {
         margin-top: 110px;
+    }
+    .subtitle {
+        margin: 0;
+        width: 100%;
+        height: fit-content;
     }
 }
