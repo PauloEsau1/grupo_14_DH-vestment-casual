@@ -1,94 +1,5 @@
-** {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;      
-}
 
-a {
-    color: black;
-    text-decoration: none;
-}
-
-article{
-    margin-top: 100px;
-    margin-bottom: 75px;
-    background-image: url(images/carrusel_01.jpg);
-    background-size: cover;
-}
-
-body {
-    font-family: 'Roboto',sans-serif;
-    font-size: medium;
-}
-
-button {
-    background-color: lightgray;
-    border: none;
-    font-weight: 400;
-    margin: 15px;
-    min-width: 50%;
-    padding: 2% 10%;
-    
-    
-}
-
-form {
-    display: block;
-    padding: 5% 0 5% 0;
-    text-align: center;
-    
-
-}
-
-.info {
-    font-weight: bold;
-    font-size: 0.75rem;
-}
-
-input {
-    height: fit-content;
-}
-h2 {
-    font-weight: bold;
-    font-size: 1.2em;
-    text-align: center;
-    font-style: italic;
-}
-
-h3 {
-    font-size: 1em;
-    font-weight: 300;
-}
-
-input {
-    margin: 0 10px;
-}
-
-label {
-    align-items: center;
-    display:flex;
-    justify-content: center;
-    margin: 15px;
-    padding: 0 3%;
-    flex-wrap: wrap;
-}
-
-label a {
-    text-decoration: underline;
-}
-
-label p {
-    width: 30%;
-    text-align: left;
-}
-
-label span, form span {
-    color: red;
-}
-
-.login {
-    margin-bottom: 15px;
-}
+/*______________________ HEADER / FOOTER ______________________*/
 
 #main-header-footer {
     position: fixed;
@@ -234,48 +145,8 @@ label span, form span {
     padding: 2px;
 }
 
-.signup {
-    margin-top: 10px;
-}
-
-.subtitle {
-    background-color: lightgrey;
-    padding: 10px;
-}
-
-#tnc-statement {
-    width: 50%;
-    text-align: center;
-}
-
-@media (max-width: 325px) {
-    label{
-        justify-content: center;
-    } 
-    label p {
-        width: 100%;
-        text-align: center;
-    }
-}
-@media (max-width: 430px) {
-    #tnc-statement {
-        text-align: center;
-        width: 30%;
-    }
-    #tnc {
-        justify-content: center;
-    }
-}
-
 @media (min-width: 500px) {
-
-    button {
-        min-width: 35%
-    }
-
-    label p {
-        width: 20%;
-    }
+    
     .main-footer  .main-logo {
         display:block;
     }
@@ -288,53 +159,11 @@ label span, form span {
     #Tipografia_footer {
         font-size:13px;
     }
-    #tnc {
-        margin: auto 0;
-    }
-    /*#tnc p {
-        width: 100%;
-        text-align: right;
-    }*/
-}
-@media (min-width: 550px){
-    #tnc-statement {
-        width: auto;
-        margin: 0 1%
-    }
+
 }
 
 @media (min-width: 700px) {
-
-    button {
-        background-color: lightgray;
-        border: none;
-        font-size: 1.3em;
-        min-width: 25%;
-        padding: 2% 7%;
-        
-        
-    }
-    h2 {
-        font-size: 1.5em;
-    }
-    h3 {
-        font-size: 1.3em;
-    }
-    label p {
-        width: 18%;
-        /*display:flex;
-        justify-content: space-between;
-        margin: 20px;
-        padding: 0 8%;*/
-        
-    }
-    /*.login {
-        display: flex;
-        min-height: 10vh;
-        margin-bottom: 0;
-        align-items: center;
-        justify-content: center;
-    }*/
+    
     .main-header-opciones {
         flex-direction: row-reverse;
     }
@@ -360,22 +189,200 @@ label span, form span {
     .main-footer-redes a {
         font-size: 25px;
     }
+}
+
+@media (min-width: 1200px) {
+    #section-path-nav {
+        margin-top: 110px;
+    }
+}
+/*______________________ LOGIN PAGE BODY ______________________*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;      
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+article{
+    margin-top: 100px;
+    margin-bottom: 75px;
+    background-image: url(images/carrusel_01.jpg);
+    background-size: cover;
+}
+
+body {
+    font-family: 'Roboto',sans-serif;
+    font-size: medium;
+}
+
+button {
+    background-color: lightgray;
+    border: none;
+    font-weight: 400;
+    margin: 15px;
+    min-width: 50%;
+    padding: 2% 10%;
+    
+    
+}
+
+form {
+    display: block;
+    padding: 5% 0 5% 0;
+    text-align: center;
+    
+
+}
+
+.info {
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+input {
+    height: fit-content;
+    margin: 0 10px;
+}
+h2 {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+label {
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    margin: 15px;
+    padding: 0 3%;
+    flex-wrap: wrap;
+}
+
+label a {
+    text-decoration: underline;
+}
+
+label p {
+    width: 30%;
+    text-align: left;
+}
+
+label span, form span {
+    color: red;
+}
+
+.login {
+    margin-bottom: 15px;
+}
+
+.signup {
+    margin-top: 10px;
+}
+
+.subtitle {
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+#tnc-statement {
+    width: 50%;
+    text-align: center;
+}
+
+
+@media (max-width: 325px) {
+    label{
+        justify-content: center;
+    }
+
+    label p {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 430px) {
+    #tnc {
+        justify-content: center;
+    }
+    
+    #tnc-statement {
+        text-align: center;
+        width: 30%;
+    }
+}
+
+
+@media (min-width: 500px){
+    button {
+        min-width: 35%
+    }
+
+    label p {
+        width: 20%;
+    }
+
+    #tnc {
+        margin: auto 0;
+    }
+}
+
+
+@media (min-width: 550px){
+    #tnc-statement {
+        width: auto;
+        margin: 0 1%
+    }
+}
+
+
+@media (min-width: 700px) {
+    button {
+        background-color: lightgray;
+        border: none;
+        font-size: 1.3em;
+        min-width: 25%;
+        padding: 2% 7%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    label p {
+        width: 18%;
+        
+    }
+
     p {
         font-size: 1.2em;
     }
-    /*.signup {
-        display: flex;
-        margin-bottom: 100px;
-        margin-top: 0;
-        align-items: center;
-        justify-content: center;
-    }*/
 }
+
+
 @media (min-width: 1000px){
     label p {
         width: 12%;
     }
 }
+
 
 @media (min-width: 1200px) {
     article {
@@ -383,16 +390,14 @@ label span, form span {
         margin-bottom: 90px;
     }
 
+    button {
+        min-width: 10%;
+    }
+
     form {
         width: 100%;
     }
-.signup, .login {
-        width: 50%;
-        margin: 0;
-        border-left: dotted gray 2px;
 
-    }
-    
     label {
         margin: 2%;
     }
@@ -402,14 +407,14 @@ label span, form span {
         margin: 0;
         width: 20%;
     }
+    
+    .login, .signup {
+        width: 50%;
+        margin: 0;
+        border-left: dotted gray 2px;
 
-    button {
-        min-width: 10%;
     }
 
-    #section-path-nav {
-        margin-top: 110px;
-    }
     .subtitle {
         margin: 0;
         width: 100%;
