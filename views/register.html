@@ -5,9 +5,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css\normalize.css"/>
+    <link rel="stylesheet" href="css\styles-login.css">
 </head>
 <body>
-    <div class="head">Registro</div>
+    <header class="main-header" id="main-header-footer">
+        <!-- encabezado HOME-->
+        <div class="main-header-logo">
+            <img class="main-logo" src="images\logo.png" alt="Logo de la tienda">         
+        </div>
+        <div class="main-header-opciones">
+            <div class="main-header-search-carrito-login">
+                <div id="main-header-search">
+                    <a><i class="fas fa-search"></i></a>
+                    <input id="search" type="text" placeholder="Búsqueda"/>
+                </div>   
+                <i class="fas fa-shopping-cart" id="iconos-shopping-user"></i> 
+                <i class="fas fa-user" id="iconos-shopping-user"></i>
+            </div>              
+            <div class="main-header-menu">
+                <nav class="main-header-menu-navbar">
+                    <ul>
+                        <li><a href="#Home">Inicio</a></li>
+                        <li><a href="#Hombre">Hombre</a></li>
+                        <li><a href="#Mujer">Mujer</a></li>
+                    </ul>
+                </nav>            
+            </div>  
+        </div>    
+    </header>
+
+    <!--contenido de la página de registro-->
+    <article>
+        <div class="subtitle">
+            <h2>Iniciar Sesión</h2>
+        </div>
+        <div class="login">
+            <form>
+                <h3>Ingresa tu correo electónico y contraseña:</h3>
+                <br>
+                <label for="login-email">
+                    <p><span>*</span>E-Mail:</p>
+                    <input id="login-email" type="email" name="user" required>
+                </label>
+                <label for="login-password">
+                    <p><span>*</span>Contraseña:</p>
+                    <input id="login-password" type="password" name="user" required>
+                </label>
+                <button type="submit">Iniciar Sesión</button>
+                <p class="info"><a href="#forgot-password">¿Olvidaste tu contrseña?</a></p>
+            </form>
+        </div>
+        <div class="subtitle">
+            <h2>¿Aún no tienes una cuenta? ¡Regístrate!</h2>
+        </div>
+        <div class="signup">
+            <form>
+                <h3>Completa los siguientes datos:</h3>
+                <br>
+                <label for="first-name">
+                    <p><span>*</span>Nombre:</p>
+                    <input id="first-name" type="text" name="first-name" required>
+                </label>
+                <label for="last-name">
+                    <p><span>*</span>Apellido:</p>
+                    <input id="last-name" type="text" name="last-name" required>
+                </label>
+                <label for="signup-email">
+                    <p><span>*</span>E-Mail:</p>
+                    <input id="signup-email" type="email" name="user" required>
+                </label>
+                <label for="signup-password">
+                    <p><span>*</span>Contraseña:</p>
+                    <input id="password" type="password" name="user" required>
+                </label>
+                <label for="signup-password-confirm">
+                    <p><span>*</span>Confirmar Contraseña:</p>
+                    <input id="signup-password-confirm" type="password" name="user" required>
+                </label>
+                <label id="tnc" for="accept-tnc">   
+                    <input id="accept-tnc" type="checkbox" name="yes" required value="yes"><p id="tnc-statement"><span>*</span>Acepto los <a href="#terms-and-conditions">términos y condiciones</a></p><br>  
+                </label>
+                <button type="submit">Crear Cuenta</button>
+                <div id="#signup-ends"></div>
+            </form>
+        </div>
+    </article>
+
+    <!-- contenido del pie de pagina-->
+    <footer class="main-footer" id="main-header-footer">
+        <div class="main-footer-1er">
+            <div class="main-footer-logo">
+                <img class="main-logo" src="images\logo.png" alt="Logo de la tienda">         
+            </div>
+            <div class="main-footer-menu01">
+                <nav class="main-footer-menu01-navbar">
+                    <ul>
+                        <li><a id="Tipografia_footer" href="#AcercaNosotros">Acerca de Nosotros</a></li>
+                        <li><a id="Tipografia_footer" href="#AvisoPrivacidad">Aviso de privacidad</a></li>
+                    </ul>
+                </nav>            
+            </div>    
+            <div class="main-footer-menu02">
+                <nav class="main-footer-menu02-navbar">
+                    <ul>
+                        <li><a id="Tipografia_footer" href="#DondeComprar"><i class="fas fa-map-marker-alt"></i> ¿ Dondé comprar ?</a></li>
+                        <li><a id="Tipografia_footer" href="#Facturacion">Facturación</a></li>
+                    </ul>
+                </nav>            
+            </div>    
+            <div class="main-footer-menu03">
+                <nav class="main-footer-menu03-navbar">
+                    <ul>
+                        <li><a id="Tipografia_footer" href="#Cambios-Devoluciones">Cambios / Devoluciones</a></li>
+                    </ul>
+                </nav>            
+            </div>     
+        </div>
+        <div class="main-footer-2do">
+            <nav class="main-footer-redes">
+                <ul>
+                    <li><a> <i class="fas fa-at"></i></a></li>
+                    <li><a> <i class="fas fa-phone"></i></a></li>
+                    <li><a> <i class="fab fa-whatsapp"></i></a></li>
+                    <li><a> <i class="fab fa-facebook-square"></i></a></li>
+                    <li><a> <i class="fab fa-twitter-square"></i></a></li>
+                    <li><a> <i class="fab fa-instagram-square"></i></a></li>
+                </ul>
+            </nav>              
+        </div>    
+    </footer>
 </body>
 </html>

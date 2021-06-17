@@ -20,7 +20,11 @@ app.get('/detalle-producto',(req,res)=>{
     let htmlPath3=path.join(__dirname,'./views/productDetail.html');
     res.sendFile(htmlPath3);
 });
-app.get('/registra',(req,res)=>{
+app.get('/registro',(req,res)=>{
     let htmlPath4=path.join(__dirname,'./views/register.html');
     res.sendFile(htmlPath4);
+});
+app.get('/categorias',(req,res)=>{
+    let htmlPath5=path.join(__dirname,'./views/categorias.html');
+    res.sendFile(htmlPath5);
 });
