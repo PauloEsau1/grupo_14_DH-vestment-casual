@@ -8,6 +8,7 @@ Sitio WEB para venta de ropa casual, dispone de 5 páginas: página de inicio, c
 ###### `Proyecto elaborado por: `
 - Eric Gómez Hernández 
 - Paulo Esaú Peredo Nava
+- Adrián Camacho
 ###### `Instructor: ` Alfonso Banda
 ---
 ####  _Referencias_
@@ -16,6 +17,6 @@ Sitio WEB para venta de ropa casual, dispone de 5 páginas: página de inicio, c
 >######  3. [Steren](https://www.steren.com.mx/) .A pesar de ser un sitio web que no tiene que ver con la temática del proyecto, tomamos la parte de inicio de sesión y registro de cuentas que se encuentran ambas en una misma página. Con esto se redujo el número de péginas, pero lo compensamoa agregando otra página enfocada a categorías.
 >######  4. [Cuidado con el perro](https://www.cuidadoconelperro.com.mx/) .Este sitio web sobre venta de ropa sirvió de inspiración para realizar la parte de detalles del producto, este diseño esta sencillo y completo.
 >######  5. [Coppel](https://www.coppel.com/) .El carrito de compras esta inspirado en el sitio de Coopel, que cuenta con las acciones básicas.
-
->######  [Tablero de trabajo](https://trello.com/b/XVM7rTjJ/dh-vestment-casual)
+---
+######  [Tablero de trabajo](https://trello.com/b/XVM7rTjJ/dh-vestment-casual)
 
