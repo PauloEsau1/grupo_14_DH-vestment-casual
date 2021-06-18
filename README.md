@@ -6,6 +6,7 @@ Sitio WEB para venta de ropa casual, dispone de 5 páginas: página de inicio, c
 - Dirigido al publico en general.
 ---
 ###### `Proyecto elaborado por: `
+- Adrián
 - Eric Gómez Hernández 
 - Paulo Esaú Peredo Nava
 ###### `Instructor: ` Alfonso Banda
