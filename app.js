@@ -5,26 +5,27 @@ const path=require('path');
 
 
 app.use(express.static(path.resolve(__dirname,'./public')));
+
 app.listen(process.env.PORT || 3000,()=>{console.log("Servidor corriendo en el puerto 3000")});
 
 
 app.get('/',(req,res)=>{
-    let htmlPath1=path.join(__dirname,'./views/index.html');
+    let htmlPath1=path.resolve(__dirname,'./views/index.html');
     res.sendFile(htmlPath1);
 });
 app.get('/carrito',(req,res)=>{
-    let htmlPath2=path.join(__dirname,'./views/productCart.html');
+    let htmlPath2=path.resolve(__dirname,'./views/productCart.html');
     res.sendFile(htmlPath2);
 });
 app.get('/detalle-producto',(req,res)=>{
-    let htmlPath3=path.join(__dirname,'./views/productDetail.html');
+    let htmlPath3=path.resolve(__dirname,'./views/productDetail.html');
     res.sendFile(htmlPath3);
 });
 app.get('/registro',(req,res)=>{
-    let htmlPath4=path.join(__dirname,'./views/register.html');
+    let htmlPath4=path.resolve(__dirname,'./views/register.html');
     res.sendFile(htmlPath4);
 });
 app.get('/categorias',(req,res)=>{
-    let htmlPath5=path.join(__dirname,'./views/categorias.html');
+    let htmlPath5=path.resolve(__dirname,'./views/categorias.html');
     res.sendFile(htmlPath5);
 });
