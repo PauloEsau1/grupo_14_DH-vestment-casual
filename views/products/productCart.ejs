@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head') %>
+<body>
+    <%- include('../partials/header') %>
+    <section id="section-path-nav">
+        <div>
+            <h3>Home | Carrito de compras</h3>
+        </div>
+    </section>     
+    <div class="resumen">
+        <img class="imagen-producto" src="images\ropa.png" alt="producto" >
+        <div>
+            <div class= "carrito-datos">Nombre del producto</div>
+            <div class= "carrito-datos">Eliminar</div>
+        </div>
+        <div class="pos">
+            <div class= "carrito-dato">Forma de entrega</div>
+            <div class= "carrito-dato"> Entrega a domicilio</div>
+            <div class= "carrito-dato"> Día de entrega</div>
+        </div>
+        <div class="pos">
+            <div class= "carrito-dato">Precio</div>
+            <div class= "carrito-dato"> $800</div>
+        </div>
+        <div class="pos">
+            <div class= "carrito-dato">Cantidad</div>
+            <select class="carrito-cant">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <div class="pos">
+            <div class= "carrito-dato">Total</div>
+            <div class= "carrito-dato"> $1700</div>
+        </div>
+    </div>
+    <div class="e">
+        <div class="Datos-resumen">
+            <img class = "min" src="images\tel.png" alt="tel">
+            Teléfono: 1234567890</div>
+        <div class="resumen-de-compra">
+            <div>Resumen de compras</div>
+            <label>Subtotal
+                <div class="espacio">$1600</div>
+            </label>
+            <label>Envio  
+                <div class="espacio">$100</div>
+            </label>
+            <label>Total  
+                <div class="espacio">$1700</div>
+            </label>
+            <div class="pagar">
+                <div>Pagar</div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<%- include('../partials/footer') %>
+</html>

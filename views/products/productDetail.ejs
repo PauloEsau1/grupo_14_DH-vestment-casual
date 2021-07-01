@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head') %>
+<body>
+    <%- include('../partials/header') %>
+    <section id="section-path-nav">
+        <div>
+            <h3>Home | Hombre | Categoría | Detalle del producto</h3>
+        </div>
+    </section>    
+    <div class="cuerpo-detalle">
+        <div class="imagen-detalle">
+            <img class="detalle-imagen" src="images\ropa.png" alt="camisa" >
+            <div class="opciones_imagen">
+                <img class="imagenes_opcion" src="images\ropa.png" alt="camisa">
+                <img class="imagenes_opcion" src="images\ropa.png" alt="camisa">
+                <img class="imagenes_opcion" src="images\ropa.png" alt="camisa">
+                <img class="imagenes_opcion" src="images\ropa.png" alt="camisa">
+            </div>
+
+        </div>
+        <div class="descripcion-producto">
+            <div>Nombre del producto</div>
+            <div>$800</div>
+            <div>Descripción corta del producto</div>
+            <div class="color">
+                <div>Color:</div>
+                <div>Negro</div>
+                <div class="circulo_color"></div>
+            </div>
+            <div>Talla</div>
+            <div class="tallas">
+                <div class="cuadros">ECH</div>
+                <div class="cuadros">CH</div>
+                <div class="cuadros">M</div>
+                <div class="cuadros">G</div>
+                <div class="cuadros">EG</div>
+            </div>
+            <div class="a_carrito">
+                <select class="cantidad_carrito">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <button type="submit" class="mandar_carrito">
+                    <img class="imagen_carrito" src="images\pngwing.com.png" alt="carrito">
+                    Agregar a carrito
+                </button>
+            </div>
+
+        </div>
+    </div>   
+</body>
+<%- include('../partials/footer') %>
+</html>

@@ -1,86 +1,13 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;      
-}
 
-a {/* LOGIN (ADRIAN) */
-    color: black;
-    text-decoration: none;
-}
-
-article{/* LOGIN (ADRIAN) */
-    margin-top: 100px;
-    margin-bottom: 75px;
-}
-
+/*
 body {
     font-family: 'Roboto',sans-serif;
     font-size: medium;
 }
 
-button {/* LOGIN (ADRIAN) */
-    background-color: lightgray;
-    border: none;
-    font-weight: 400;
-    margin: 15px;
-    min-width: 50%;
-    padding: 2% 10%;
-    
-    
-}
-
-form {/* LOGIN (ADRIAN) */
-    display: block;
-    padding: 5% 0 5% 0;
-    text-align: center;
-    
-
-}
-
-.info {/* LOGIN (ADRIAN) */
-    font-weight: bold;
-    font-size: 0.75rem;
-}
-
-input {/* LOGIN (ADRIAN) */
-    height: fit-content;
-}
-h2 {/* LOGIN (ADRIAN) */
-    font-weight: bold;
-    font-size: 1.2em;
-    text-align: center;
-    font-style: italic;
-}
-
-h3 {/* LOGIN (ADRIAN) */
-    font-size: 1em;
-    font-weight: 300;
-}
-
-label {/* LOGIN (ADRIAN) */
-    align-items: center;
-    display:flex;
-    justify-content: space-between;
-    margin: 15px;
-    padding: 0 5%;
-}
-
-label a {/* LOGIN (ADRIAN) */
-    text-decoration: underline;
-}
-
-label p {/* LOGIN (ADRIAN) */
-    min-width: 28%;
-    text-align: left;
-}
-
-label span, form span {/* LOGIN (ADRIAN) */
-    color: red;
-}
-
-.login {/* LOGIN (ADRIAN) */
-    margin-bottom: 15px;
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #main-header-footer {
@@ -88,8 +15,9 @@ label span, form span {/* LOGIN (ADRIAN) */
     background-color:#DEDBDB;
     padding: 8px;    
     display: flex;
-    width: 100vw;
+    width: max-content;
     overflow-y: scroll;
+    width: 100%;
 }
 .main-header {
     left: 0;
@@ -103,7 +31,6 @@ label span, form span {/* LOGIN (ADRIAN) */
 }
 .main-header-search-carrito-login,
 .main-header-menu {
-    margin: auto;
     display: flex;
     align-items: center;
     width: 80%;
@@ -227,19 +154,8 @@ label span, form span {/* LOGIN (ADRIAN) */
     padding: 2px;
 }
 
-.signup {/* LOGIN (ADRIAN) */
-    margin-top: 10px;
-}
-
-.subtitle {/* LOGIN (ADRIAN) */
-    background-color: lightgrey;
-    padding: 10px;
-}
-
 @media (min-width: 500px) {
-    label {/* LOGIN (ADRIAN) */
-        padding: 0 20%;
-    }
+    
     .main-footer  .main-logo {
         display:block;
     }
@@ -252,45 +168,10 @@ label span, form span {/* LOGIN (ADRIAN) */
     #Tipografia_footer {
         font-size:13px;
     }
-    #tnc {/* LOGIN (ADRIAN) */
-        margin: auto 0;
-    }
-    #tnc p {/* LOGIN (ADRIAN) */
-        width: 100%;
-        text-align: right;
-    }
-}
-@media (min-width: 700px) {
 
-    button {/* LOGIN (ADRIAN) */
-        background-color: lightgray;
-        border: none;
-        font-size: 1.3em;
-        min-width: 50%;
-        padding: 2% 10%;
-        
-        
-    }
-    h2 {/* LOGIN (ADRIAN) */
-        font-size: 1.5em;
-    }
-    h3 {/* LOGIN (ADRIAN) */
-        font-size: 1.3em;
-    }
-    label {/* LOGIN (ADRIAN) */
-        display:flex;
-        justify-content: space-between;
-        margin: 20px;
-        padding: 0 8%;
-        
-    }
-    .login {/* LOGIN (ADRIAN) */
-        display: flex;
-        min-height: 10vh;
-        margin-bottom: 0;
-        align-items: center;
-        justify-content: center;
-    }
+}
+
+@media (min-width: 700px) {
     .main-header-opciones {
         flex-direction: row-reverse;
     }
@@ -310,21 +191,16 @@ label span, form span {/* LOGIN (ADRIAN) */
     #main-header-footer {
         padding: 8px 30px;
     }
+
+    header {
+        width: 100%;
+    }
+
     #section-path-nav {
         padding: 5px 30px;
     }
     .main-footer-redes a {
         font-size: 25px;
-    }
-    p {/* LOGIN (ADRIAN) */
-        font-size: 1.2em;
-    }
-    .signup {/* LOGIN (ADRIAN) */
-        display: flex;
-        margin-bottom: 100px;
-        margin-top: 0;
-        align-items: center;
-        justify-content: center;
     }
 }
 
@@ -333,3 +209,220 @@ label span, form span {/* LOGIN (ADRIAN) */
         margin-top: 110px;
     }
 }
+/*______________________ LOGIN PAGE BODY ______________________
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+}
+
+.register a {
+    color: black;
+    text-decoration: none;
+}
+
+.register article{
+    margin-bottom: 75px;
+    margin-top: 100px;
+}
+
+.register  {
+    font-family: 'Roboto',sans-serif;
+    font-size: medium;
+}
+
+.register button {
+    background-color: lightgray;
+    border: none;
+    font-weight: 400;
+    margin: 15px;
+    min-width: 50%;
+    padding: 2% 10%;
+}
+
+.register form {
+    display: block;
+    padding: 5% 0 5% 0;
+    text-align: center;
+}
+
+.register .info {
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.register input {
+    height: fit-content;
+    margin: 0 10px;
+}
+.register h2 {
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+.register h3 {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.register label {
+    align-items: center;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px;
+    padding: 0 3%;
+    
+}
+
+.register label a {
+    text-decoration: underline;
+}
+
+.register label p {
+    text-align: left;
+    width: 30%;
+}
+
+.register label span, .register form span {
+    color: red;
+}
+
+.register .login {
+    margin-bottom: 15px;
+}
+
+.register .signup {
+    margin-top: 10px;
+}
+
+.register .subtitle {
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+#tnc-statement {
+    text-align: center;
+    width: 50%;
+}
+
+
+@media (max-width: 325px) {
+    .register label{
+        justify-content: center;
+    }
+
+    .register label p {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 430px) {
+    #tnc {
+        justify-content: center;
+    }
+    
+    #tnc-statement {
+        text-align: center;
+        width: 30%;
+    }
+}
+
+
+@media (min-width: 500px){
+    .register button {
+        min-width: 35%
+    }
+
+    .register label p {
+        width: 20%;
+    }
+
+    #tnc {
+        margin: auto 0;
+    }
+}
+
+
+@media (min-width: 550px){
+    #tnc-statement {
+        margin: 0 1%;
+        width: auto;
+    }
+}
+
+@media (min-width: 700px) {
+    .register button {
+        background-color: lightgray;
+        border: none;
+        font-size: 1.3em;
+        min-width: 25%;
+        padding: 2% 7%;
+    }
+
+    .register h2 {
+        font-size: 1.5em;
+    }
+
+    .register h3 {
+        font-size: 1.3em;
+    }
+
+    .register label p {
+        width: 18%;
+    }
+
+    .register p {
+        font-size: 1.2em;
+    }
+}
+
+
+@media (min-width: 1000px){
+    .register label p {
+        width: 12%;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .register article {
+        align-items: stretch;
+        display: flex;
+        height: 78vh;
+        margin-bottom: 90px;
+    }
+
+    .register button {
+        min-width: 10%;
+    }
+
+    .register label {
+        margin: 2%;
+    }
+
+    .register label p {
+        height: fit-content;
+        margin: 0;
+        width: 20%;
+    }
+
+    .register .login, .register .signup {
+        border-left: dotted gray 2px;
+        display: block;
+        margin: 0;
+        width: 50%;
+    }
+
+    .register .subtitle {
+        height: fit-content;
+        width: 100%;
+    }
+}
+
+*/

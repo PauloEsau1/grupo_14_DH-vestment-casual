@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <%- include('../partials/head')%>
+    <%- include('../partials/header')%>
+    <body class="product-edit-field">
+        <div class="title"><h1>Agregar Nuevo Producto</h1></div>
+        <form class="retail-edit" action="/agregar-producto" method="POST">
+            <div class="photo-gallery">
+                <div class="gallery-row">
+                    <div class="add-product-photo">
+                        <label for="add-photo-button"> + </label>
+                        <input id="add-photo-button" type="file" accept=".jpg" name="photos" multiple hidden>
+                    </div>
+                    <div class="product-photo">
+                        <i class="fa fa-camera"></i>
+                    </div>
+                    <div class="product-photo">
+                        <i class="fa fa-camera"></i>
+                    </div>
+                </div>
+                <div class="gallery-row">
+                    <div class="product-photo">
+                        <i class="fa fa-camera"></i>
+                    </div>
+                    <div class="product-photo">
+                        <i class="fa fa-camera"></i>
+                    </div>
+                    <div class="product-photo">
+                        <i class="fa fa-camera"></i>
+                    </div>
+                </div>
+                <div class="gallery-row">
+                    <div class="product-photo">
+                        <i class="fa fa-camera"></i>
+                    </div>
+                    <div class="product-photo">
+                        <i class="fa fa-camera"></i>
+                    </div>
+                    <div class="product-photo">
+                        <i class="fa fa-camera"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="retail-info-field">
+                <div class="info-row block">
+                    <label for="productName">
+                        Nombre de producto:
+                    </label>
+                    <input id="productName" type="text" name="productName" required>
+                </div>
+                <div class="info-row">
+                    <label class="by-two" for="clothingType">
+                        Tipo:
+                        <select id="clothingType" name="clothingType" value="select">
+                            <option value="" disabled selected hidden>Elegir...</option>
+                            <option value="coat">Abrigo</option>
+                            <option value="accessory">Accesorio</option>
+                            <option value="blouse">Blusa</option>
+                            <option value="socks">Calcetines</option>
+                            <option value="shirt">Camisa</option>
+                            <option value="t-shirt">Camiseta</option>
+                            <option value="jacket">Chamarra</option>
+                            <option value="pants">Pantalón</option>
+                            <option value="sweatpants">Pantalón Dep.</option>
+                            <option value="underwear">Ropa Interior</option>
+                            <option value="sweatshirt">Sudadera</option>
+                            <option value="sweater">Suéter</option>
+                            <option value="sneakers">Tenis</option>
+                            <option value="shoes">Zapatos</option>
+                        </select>
+                    </label>
+                    <label class="by-two" for="clothingSex">
+                        Sexo:
+                        <select id="clothingSex" name="clothingSex">
+                            <option value="" disabled selected hidden>Elegir...</option>
+                            <option value="M">Hombre</option>
+                            <option value="F">Mujer</option>
+                            <option value="U">Unisex</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="info-row">
+                    <label class="by-two" for="clothingSize">
+                        Tamaño:
+                        <select id="clothingSize" name="clothingSize">
+                            <option value="" disabled selected hidden>Elegir...</option>
+                            <option value="XS">XCH</option>
+                            <option value="S">CH</option>
+                            <option value="M">M</option>
+                            <option value="L">G</option>
+                            <option value="XL">XG</option>
+                            <option value="XXL">XXG</option>
+                        </select>
+                    </label>
+                    <label class="by-two" for="clothingColor">
+                        Tipo:
+                        <select id="clothingColor" name="clothingColor">
+                            <option value="" disabled selected hidden>Elegir...</option>
+                            <option value="yellow">Amarillo</option>
+                            <option value="blue">Azul</option>
+                            <option value="beige">Beige</option>
+                            <option value="white">Blanco</option>
+                            <option value="brown">Café</option>
+                            <option value="crimson">Carmesí</option>
+                            <option value="gray">Gris</option>
+                            <option value="maroon">Marrón</option>
+                            <option value="denim">Mezclilla</option>
+                            <option value="purple">Morado</option>
+                            <option value="mustard">Mostaza</option>
+                            <option value="black">Negro</option>
+                            <option value="red">Rojo</option>
+                            <option value="pink">Rosa</option>
+                            <option value="cyan">Turquesa</option>
+                            <option value="green">Verde</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="info-row">
+                    <label class="by-two" for="inStock">
+                        Stock:
+                        <input id= "inStock" type="number" name="inStock">
+                    </label>
+                    <label class="by-two" for="price">
+                        Precio:
+                        <input id="price" type="number" name="price" required>
+                    </label>
+                    
+                </div>
+                <div class="info-row block">
+                    <label for="productDescription">
+                        Descripción:   
+                    </label>
+                    <input id="productDescription" type="text" name="productDescription" required>
+                    
+                </div>
+                <div class="submit-area">
+                    <button type="submit">Agregar Producto</button>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
