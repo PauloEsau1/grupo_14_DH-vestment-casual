@@ -2,6 +2,100 @@
 <html lang="en">
     <%- include('../partials/head')%>
     <%- include('../partials/header')%>
-    <body>
+   <body class="listings">
+        <h1 class="title">Productos</h1>
+        <div class="despliegue">
+            <%const j= Math.trunc(productData.length/4) %>
+            <%const k= j*2 %>
+            <%const l= j*3 %>
+                <button class="add-product" type="button" onclick="location.href='/admin/agregar-producto'">
+                    <div>
+                        <i class="fa fa-plus"></i>
+                        <p>Agregar Nuevo</p>
+                    </div>
+                </button>
+                <% for (let i = 0; i < j; i ++) { %>
+                    <div class="productos">
+                        <img src="/images/products/<%=productData[i].photos%>" alt="imagen de producto">
+                        <div class="data">
+                            <p>ID: <%= productData[i].id %></p>
+                            <p>Prenda: <%= dict.type[productData[i].clothingType] %></p>
+                            <p>Color: <%= dict.color[productData[i].clothingColor] %></p>
+                            <p>Talla: <%= dict.size[productData[i].clothingSize] %></p>
+                            <p>Precio: <%= productData[i].price %></p>
+                            <button class="action" type="button" onclick="location.href='/admin/modificar-producto/<%=productData[i].id%>'">Editar</button>
+                            <form action="/admin/<%=productData[i].id%>?_method=DELETE" method="POST" style="display: inline-flex">    
+                                <button class="action" type="submit">Eliminar</button>
+                            </form>
+                        </div>
+                    </div>
+     
+                <% } %>
+        </div>
+        <div class="despliegue">
+                <% for (let i = j ; i < k; i ++) { %>
+                    <div class="productos">
+                        <img src="/images/products/<%=productData[i].photos%>" alt="imagen de producto">
+                        <div class="data">
+                            <p>ID: <%= productData[i].id %></p>
+                            <p>Prenda: <%= dict.type[productData[i].clothingType] %></p>
+                            <p>Color: <%= dict.color[productData[i].clothingColor] %></p>
+                            <p>Talla: <%= dict.size[productData[i].clothingSize] %></p>
+                            <p>Precio: <%= productData[i].price %></p>
+                            <button class="action" type="button" onclick="location.href='/admin/modificar-producto/<%=productData[i].id%>'">Editar</button>
+                            <form action="/admin/<%=productData[i].id%>?_method=DELETE" method="POST" style="display: inline-flex">    
+                                <button class="action" type="submit">Eliminar</button>
+                            </form>
+                        </div>
+                    </div>
+     
+                <% } %>
+        
+        </div>
+        </div>
+        <div class="despliegue">
+                <% for (let i = k ; i < l; i ++) { %>
+                    <div class="productos">
+                        <img src="/images/products/<%=productData[i].photos%>" alt="imagen de producto">
+                        <div class="data">
+                            <p>ID: <%= productData[i].id %></p>
+                            <p>Prenda: <%= dict.type[productData[i].clothingType] %></p>
+                            <p>Color: <%= dict.color[productData[i].clothingColor] %></p>
+                            <p>Talla: <%= dict.size[dict.size[productData[i].clothingSize]] %></p>
+                            <p>Precio: <%= productData[i].price %></p>
+                            <button class="action" type="button" onclick="location.href='/admin/modificar-producto/<%=productData[i].id%>'">Editar</button>
+                            <form action="/admin/<%=productData[i].id%>?_method=DELETE" method="POST" style="display: inline-flex"> 
+                                <button class="action" type="submit">Eliminar</button>
+                            </form>
+                            
+                        </div>
+                    </div>
+ 
+                <% } %>
+    
+        </div>
+        </div>
+            <div class="despliegue">
+                    <% for (let i = l ; i < productData.length; i ++) { %>
+                        <div class="productos">
+                            <img src="/images/products/<%=productData[i].photos%>" alt="imagen de producto">
+                            <div class="data">
+                                <p>ID: <%= productData[i].id %></p>
+                                <p>Prenda: <%= dict.type[productData[i].clothingType] %></p>
+                                <p>Color: <%= dict.color[productData[i].clothingColor] %></p>
+                                <p>Talla: <%= dict.size[dict.size[productData[i].clothingSize]] %></p>
+                                <p>Precio: <%= productData[i].price %></p>
+                                <button class="action" type="button" onclick="location.href='/admin/modificar-producto/<%=productData[i].id%>'">Editar</button>
+                                <form action="/admin/<%=productData[i].id%>?_method=DELETE" method="POST" style="display: inline-flex">   
+                                    <button class="action" type="submit" >Eliminar</button>
+                                </form>
+                                
+
+                            </div>
+                        </div>
+     
+                    <% } %>
+        
+            </div>
     </body>
 </html>

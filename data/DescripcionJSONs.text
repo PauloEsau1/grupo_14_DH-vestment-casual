@@ -1,0 +1,21 @@
+// users.json **********************************************************************************
+    {
+        "id": 1,                            // Numerico
+        "first_name": "Nollie",             
+        "last_name": "Merrin",
+        "email": "nmerrin0@dell.com",
+        "password": "6fr0vs",
+        "avatar": "https://robohash.org/veritatisrecusandaeid.png?size=100x100&set=set1" 
+    }
+
+// products.json **********************************************************************************
+    {
+        "id": 1,                              // Numerico
+        "product": "Casual",                  // "Casual" | "Jeans"
+        "description": "nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue",
+        "category": "Hombre",                 // "Hombre" | "Mujer"
+        "color": "Blanco",                   // "Azul"|"Negro"|"Blanco"|"Cafe"
+        "size": "Extra Grande",              // "Chico"|"Mediano"|"Grande"|"Extra Grande"
+        "price": 2506,                       // Numerico
+        "image": "Casual_Hombre_Blanco.jpg"  // concat(product,'_',category,'_',color,'.jpg')   
+    }                                       //  2*2*4 = 16 imagenes que irán en ./public/images

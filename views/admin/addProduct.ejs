@@ -4,12 +4,12 @@
     <%- include('../partials/header')%>
     <body class="product-edit-field">
         <div class="title"><h1>Agregar Nuevo Producto</h1></div>
-        <form class="retail-edit" action="/agregar-producto" method="POST">
+        <form class="retail-edit" action="/admin/agregar-producto" method="POST">
             <div class="photo-gallery">
                 <div class="gallery-row">
                     <div class="add-product-photo">
                         <label for="add-photo-button"> + </label>
-                        <input id="add-photo-button" type="file" accept=".jpg" name="photos" multiple hidden>
+                        <input id="add-photo-button" type="text" name="photos" value="Casual_Hombre_Negro.jpg" hidden>
                     </div>
                     <div class="product-photo">
                         <i class="fa fa-camera"></i>
@@ -47,6 +47,33 @@
                         Nombre de producto:
                     </label>
                     <input id="productName" type="text" name="productName" required>
+                </div>
+                <p>Fotos:</p>
+                <div class="mb-photo-gallery">
+                    <div class="mb-gallery-row">
+                        <div class="mb-add-product-photo">
+                            <label for="mb-add-photo-button"> + </label>
+                            <!--<input id="mb-add-photo-button" type="file" accept=".jpg" name="photos" multiple hidden>-->
+                        </div>
+                        <div class="mb-product-photo">
+                            <i class="fa fa-camera"></i>
+                        </div>
+                        <div class="mb-product-photo">
+                            <i class="fa fa-camera"></i>
+                        </div>
+                        <div class="mb-product-photo">
+                            <i class="fa fa-camera"></i>
+                        </div>
+                        <div class="mb-product-photo">
+                            <i class="fa fa-camera"></i>
+                        </div>
+                        <div class="mb-product-photo">
+                            <i class="fa fa-camera"></i>
+                        </div>
+                        <div class="mb-product-photo">
+                            <i class="fa fa-camera"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="info-row">
                     <label class="by-two" for="clothingType">
@@ -136,6 +163,7 @@
                 <div class="submit-area">
                     <button type="submit">Agregar Producto</button>
                 </div>
+                <div class="end-buffer"></div>
             </div>
         </form>
     </body>

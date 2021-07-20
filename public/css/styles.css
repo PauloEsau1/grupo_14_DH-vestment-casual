@@ -10,6 +10,7 @@
 .buffer-footer {
     width: 100%;
     height: 137px;
+
 }
 .buffer-header {
     width: 100%;
@@ -563,6 +564,7 @@
 
 }
 
+
 @media (min-width: 430px) {
     .datos{
         font-size: 70%;
@@ -579,6 +581,9 @@
         font-size: 90%;
     }
 }
+
+
+
 /* ****************************************media560**********/
 @media (min-width: 560px) {
     .main-footer  .main-logo {
@@ -955,7 +960,137 @@
 
 }
 
+/* ***************** LISTINGS PAGE ***************** */
+
+.listings{
+    display: flex;
+    flex-direction: column;
+}
+.listings .despliegue{
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3%;
+    width: 100%;
+
+}
+.listings .productos, .listings .add-product{
+    background-color: rgb(238, 238, 238);
+    border: solid lightgray 3px;
+    border-radius: 25px;
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+    width: 23%;
+}
+
+.listings .add-product {
+    align-items: center;
+    background-color: white;
+    border: solid rgb(212, 212, 212) 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.listings .add-product div {
+    background-color: rgb(240, 240, 240);
+    border-radius: 25px;
+    padding: 75% 22%;
+}
+
+.listings .add-product i {
+    color: gray;
+    font-size: 3em;
+    margin: 10%;
+}
+
+.listings .add-product p {
+    color: gray;
+    font-size: 1.3em;
+    margin: 10% 0;
+}
+
+.listings .title {
+    align-items: center;
+    background-color: lightgrey;
+    display: flex;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 400;
+    height: 6vh;
+    justify-content: center;
+}
+
+.listings .despliegue img {
+    border-radius: 25px 25px 0 0 ;
+    height: 400px;
+    width: 100%;
+}
+
+.listings .data{
+    background-color: white;
+    font-size: 15px;
+    border-radius: 0 0 25px 25px;
+    padding: 5px;
+   
+}
+
+.listings .action {
+    border: none;
+    margin: 2% 5%;
+    padding: 3%;
+    width: 30%;
+
+}
+
+@media (max-width: 1000px) {
+    .listings .despliegue img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 700px){
+    .listings .productos {
+        width: 30%;
+    }
+}
+
+@media (max-width: 500px){
+    .listings .productos {
+        width: 70%;
+    }
+
+    .listings .despliegue{
+        justify-content: center;
+
+    }
+
+    .listings .despliegue img {
+        height: 350px;
+    }
+}
+
+@media (max-width: 350px){
+    .listings .productos {
+        width: 90%;
+    }
+}
+
 /* ***************** LOGIN PAGE ***************** */
+
+.register {
+    align-items: stretch;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.register article {
+    width: 100%;
+    height: 70vh;
+}
 
 .register a {
     color: black;
@@ -1191,7 +1326,7 @@
 }
 
 
-.product-edit-field .product-photo, .add-product-photo {
+.product-edit-field .product-photo, .product-edit-field .add-product-photo {
     align-items: center;
     border: 3px solid lightgray;
     border-radius: 5%;
@@ -1201,11 +1336,16 @@
     width: 120px;
 }
 
+.product-edit-field .end-buffer {
+    display: none;
+}
+
 .product-edit-field .retail-edit {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     height: 80vh;
+    justify-content: center;
     padding: 0 10%;
     width: 100%;
 }
@@ -1260,7 +1400,10 @@
     font-style: italic;
     align-items: center;
     padding: 1%;
-    
+}
+
+.product-edit-field .mb-photo-gallery, .product-edit-field .retail-info-field p {
+    display: none;
 }
 
 .product-edit-field .product-photo i {
@@ -1269,10 +1412,12 @@
 }
 
 .product-edit-field .submit-area {
+    background-color: lightgray !important;
     width: 90%;
 }
 
 .product-edit-field .submit-area button{
+    background-color: lightgray;
     border: none;
     width: 100%;
 }
@@ -1292,7 +1437,7 @@
 }
 
 .product-edit-field .title h1 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-style: italic;
     font-weight: 400;
 }
@@ -1303,4 +1448,122 @@
 
 .product-edit-field .block label {
     padding: 0;
+}
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+
+    .product-edit-field .retail-edit{
+        padding: 0;
+    }
+
+    .product-edit-field .photo-gallery {
+        display: none;
+    }
+
+    .product-edit-field .retail-info-field {
+        height: 100%;
+        width: 100%;
+        flex: 1;
+        padding: 0;
+    }
+
+    .product-edit-field .retail-info-field div, .product-edit-field .submit-area {
+        background-color: white !important;
+        margin-bottom: 10px;
+    }
+
+    .product-edit-field .retail-info-field p {
+        display: block;
+        font-style: italic;
+        text-align: center;
+        width: 100%;
+    }
+
+    .product-edit-field .info-row, .product-edit-field .submit-area {
+        width: 100%;}
+
+    .product-edit-field .submit-area button {
+        height: 30px;
+    }
+
+
+
+
+
+
+
+
+    .product-edit-field .mb-product-photo, .product-edit-field .mb-add-product-photo {
+        align-items: center;
+        border: 3px solid lightgray;
+        border-radius: 5%;
+        display: flex;
+        width: 120px;
+        height: 120px;
+        justify-content: center;
+        margin: 0 5px;
+
+    }
+
+    .product-edit-field .mb-add-product-photo {
+        margin-left: 0;
+    }
+
+    .product-edit-field .mb-photo-gallery {
+        display: flex;
+        flex: 1;
+        overflow: auto;
+        padding: 0;
+        width: 100%;
+    }
+
+    .product-edit-field .mb-gallery-row {
+        display: flex;
+        min-height: min-content;
+        padding: 0 0 0 5px !important;
+    }
+
+    .product-edit-field .mb-product-photo i {
+        color: gray;
+        font-size: 2rem;
+    }
+
+    .product-edit-field label[for="mb-add-photo-button"] {
+        align-items: center;
+        color: gray;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 3rem;
+        height: 100%;
+        justify-content: center;
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .product-edit-field .title h1 {
+        font-size: 1.2em;
+    }
+
+    .product-edit-field .info-row .by-two {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .product-edit-field .submit-area{
+        margin-bottom: 20px;
+    }
+
+    .product-edit-field .end-buffer {
+        display: default;
+        height: 2vh;
+    }
+
 }

@@ -10,22 +10,23 @@
     </section>    
     <div class="cuerpo-detalle">
         <div class="imagen-detalle">
-            <img class="detalle-imagen" src="images\ropa.png" alt="camisa" >
+            <% productosData%>
+            <img class="detalle-imagen" src="/images/products/<%=productosData[1].image%>" alt="camisa" >
             <div class="opciones_imagen">
-                <img class="imagenes_opcion" src="images\ropa.png" alt="camisa">
-                <img class="imagenes_opcion" src="images\ropa.png" alt="camisa">
-                <img class="imagenes_opcion" src="images\ropa.png" alt="camisa">
-                <img class="imagenes_opcion" src="images\ropa.png" alt="camisa">
+                <img class="imagenes_opcion" src="/images/products/<%=productosData[1].image%>" alt="camisa">
+                <img class="imagenes_opcion" src="/images/products/<%=productosData[1].image%>" alt="camisa">
+                <img class="imagenes_opcion" src="/images/products/<%=productosData[1].image%>" alt="camisa">
+                <img class="imagenes_opcion" src="/images/products/<%=productosData[1].image%>" alt="camisa">
             </div>
 
         </div>
         <div class="descripcion-producto">
-            <div>Nombre del producto</div>
-            <div>$800</div>
-            <div>Descripción corta del producto</div>
+            <div><%= productosData[1].product %></div>
+            <div>$<%= productosData[1].price %></div>
+            <div><%= productosData[1].description %>></div>
             <div class="color">
                 <div>Color:</div>
-                <div>Negro</div>
+                <div><%= productosData[1].color %></div>
                 <div class="circulo_color"></div>
             </div>
             <div>Talla</div>
@@ -44,7 +45,7 @@
                     <option value="4">4</option>
                 </select>
                 <button type="submit" class="mandar_carrito">
-                    <img class="imagen_carrito" src="images\pngwing.com.png" alt="carrito">
+                    <img class="imagen_carrito" src="\images\pngwing.com.png" alt="carrito">
                     Agregar a carrito
                 </button>
             </div>

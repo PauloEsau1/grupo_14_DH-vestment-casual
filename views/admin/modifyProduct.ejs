@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
+    
+    <% 
+    const item = productData.find(i => i.id == itemId);
+    let values= {
+        name: item.productName,
+        type: item.clothingType,
+        sex: item.clothingSex,
+        size: item.clothingSize,
+        color: item.clothingColor,
+        stock: item.inStock,
+        price: item.price,
+        description: item.productDescription,
+        photos: item.photos
+    }
+    let actionPath = "/admin/modificar-producto/" + itemId.toString() + "?_method=PUT";
+    %>
     <%- include('../partials/head')%>
     <%- include('../partials/header')%>
     <body class="product-edit-field">
         <div class="title"><h1>Modificar Producto</h1></div>
-        <form class="retail-edit" action="/agregar-producto?_method=PUT" method="POST">
+        <form class="retail-edit" action="<%=actionPath%>" method="POST">
             <div class="photo-gallery">
                 <div class="gallery-row">
                     <div class="add-product-photo">
                         <label for="add-photo-button"> + </label>
-                        <input id="add-photo-button" type="file" accept=".jpg" name="photos" multiple hidden>
+                        <input id="add-photo-button" type="text" name="photos" value="<%=values.photos%>" hidden>
                     </div>
                     <div class="product-photo">
                         <i class="fa fa-camera"></i>
@@ -46,13 +62,40 @@
                     <label for="productName">
                         Nombre de producto:
                     </label>
-                    <input id="productName" type="text" name="productName" required>
+                    <input id="productName" type="text" name="productName" value="<%=values.name%>"required>
+                </div>
+                <p>Fotos:</p>
+                <div class="mb-photo-gallery">
+                    <div class="mb-gallery-row">
+                        <div class="mb-add-product-photo">
+                            <label for="mb-add-photo-button"> + </label>
+                            <!--<input id="mb-add-photo-button" type="file" accept=".jpg" name="photos" multiple hidden>-->
+                        </div>
+                        <div class="mb-product-photo">
+                            <i class="fa fa-camera"></i>
+                        </div>
+                        <div class="mb-product-photo">
+                            <i class="fa fa-camera"></i>
+                        </div>
+                        <div class="mb-product-photo">
+                            <i class="fa fa-camera"></i>
+                        </div>
+                        <div class="mb-product-photo">
+                            <i class="fa fa-camera"></i>
+                        </div>
+                        <div class="mb-product-photo">
+                            <i class="fa fa-camera"></i>
+                        </div>
+                        <div class="mb-product-photo">
+                            <i class="fa fa-camera"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="info-row">
                     <label class="by-two" for="clothingType">
                         Tipo:
-                        <select id="clothingType" name="clothingType" value="select">
-                            <option value="" disabled selected hidden>Elegir...</option>
+                        <select id="clothingType" name="clothingType">
+                            <option value="<%=values.type%>" selected hidden><%=dict.type[values.type]%></option>
                             <option value="coat">Abrigo</option>
                             <option value="accessory">Accesorio</option>
                             <option value="blouse">Blusa</option>
@@ -72,7 +115,7 @@
                     <label class="by-two" for="clothingSex">
                         Sexo:
                         <select id="clothingSex" name="clothingSex">
-                            <option value="" disabled selected hidden>Elegir...</option>
+                            <option value="<%=values.sex%>" selected hidden><%=dict.sex[values.sex]%></option>
                             <option value="M">Hombre</option>
                             <option value="F">Mujer</option>
                             <option value="U">Unisex</option>
@@ -83,7 +126,7 @@
                     <label class="by-two" for="clothingSize">
                         Tamaño:
                         <select id="clothingSize" name="clothingSize">
-                            <option value="" disabled selected hidden>Elegir...</option>
+                            <option value="<%=values.size%>" selected hidden><%=dict.size[values.size]%></option>
                             <option value="XS">XCH</option>
                             <option value="S">CH</option>
                             <option value="M">M</option>
@@ -93,9 +136,9 @@
                         </select>
                     </label>
                     <label class="by-two" for="clothingColor">
-                        Tipo:
+                        Color:
                         <select id="clothingColor" name="clothingColor">
-                            <option value="" disabled selected hidden>Elegir...</option>
+                            <option value="<%=values.color%>" selected hidden><%=dict.color[values.color]%></option>
                             <option value="yellow">Amarillo</option>
                             <option value="blue">Azul</option>
                             <option value="beige">Beige</option>
@@ -118,11 +161,11 @@
                 <div class="info-row">
                     <label class="by-two" for="inStock">
                         Stock:
-                        <input id= "inStock" type="number" name="inStock">
+                        <input id= "inStock" type="number" name="inStock" value="<%=values.stock%>" required>
                     </label>
                     <label class="by-two" for="price">
                         Precio:
-                        <input id="price" type="number" name="price" required>
+                        <input id="price" type="number" name="price" required value="<%=values.price%>">
                     </label>
                     
                 </div>
@@ -130,12 +173,13 @@
                     <label for="productDescription">
                         Descripción:   
                     </label>
-                    <input id="productDescription" type="text" name="productDescription" required>
+                    <input id="productDescription" type="text" name="productDescription" value="<%=values.description%>" required>
                     
                 </div>
                 <div class="submit-area">
                     <button type="submit">Guardar Cambios</button>
                 </div>
+                <div class="end-buffer"></div>
             </div>
         </form>
     </body>
