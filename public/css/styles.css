@@ -166,6 +166,7 @@
     display: flex;
     flex-direction: column;
 }
+
 #section-carrusel-destacados {
     display: flex;
     flex-direction: column;
@@ -199,7 +200,7 @@
 #carrusel a{
     font-size: 25px;
 }
-#destacados {
+#destacados, #categoria-destacados {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,6 +211,11 @@
     margin: 10px;
     width: 85vw;
 }
+
+#categoria-destacados {
+    width: 80%;
+}
+
 #destacados h1 {
     font-size: 18px;
     padding: 5px 0;
@@ -222,16 +228,19 @@
 .producto:hover {
     background-color: rgb(54, 224, 224);
 }
-.producto img {
-    width: 150px;
-    padding: 10px;
+.producto img {  
+    height: 200px;
+    width: 90%;
+    border: solid lightgray 3px;
+    border-radius: 25px;
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+    
 }
-.producto h2 {
+.producto p {
     font-size: 12px;
-}
-.producto h3 {
-    font-size: 10px;
-    padding: 0 0 5px;
+    padding: 2px 10px 2px 10px;
 }
 #Ronda-productos-destacados {
     display: flex;
@@ -464,7 +473,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 500px;
+    /* height: 500px; */
     
 }
 
@@ -484,8 +493,11 @@
     justify-content: center;
     align-items: center;
     width: 80%;
-    height: 20%;
+    /*height: 20%; */
     background-color: darkgray;
+
+    padding: 10px;
+    margin: 10px;
 }
 .categorias-nombre{
     font-size: 100%;
@@ -966,7 +978,7 @@
     display: flex;
     flex-direction: column;
 }
-.listings .despliegue{
+.listings .despliegue {
     align-items: stretch;
     display: flex;
     flex-wrap: wrap;
@@ -974,6 +986,19 @@
     padding: 3%;
     width: 100%;
 
+}
+.listings .page-nav {
+    align-items: flex-start;
+    display: flex;
+    height: 10%;
+    justify-content: center;
+    padding: 2%;
+    width: 100%;
+}
+.listings .page-nav button{
+    font-size: 1.5em;
+    height: 70px;
+    width: 300px;
 }
 .listings .productos, .listings .add-product{
     background-color: rgb(238, 238, 238);
@@ -983,6 +1008,17 @@
     padding: 1%;
     text-align: center;
     width: 23%;
+}
+.listings .productos:hover, .listings .add-product:hover, .listings button:hover{
+    background-color: rgb(221, 221, 221);
+}
+
+.listings .add-product:hover i, .listings .add-product:hover p {
+    color: white;
+}
+
+.listings .add-product:hover div {
+    background-color: rgb(207, 207, 207);
 }
 
 .listings .add-product {
@@ -1038,28 +1074,62 @@
    
 }
 
-.listings .action {
+.listings button {
     border: none;
-    margin: 2% 5%;
-    padding: 3%;
-    width: 30%;
-
+    margin: 5px 10px;
+    padding: 5px;
+    width: 100px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     .listings .despliegue img {
-        height: 200px;
+        height: 350px;
+        
     }
-}
-
-@media (max-width: 700px){
-    .listings .productos {
+    .listings .productos, .listings .add-product {
         width: 30%;
     }
 }
 
+@media (max-width: 850px){
+    .listings .despliegue img {
+        height: 450px;
+        
+    }
+    .listings .productos  {
+        width: 45%;
+    }
+    .listings .add-product {
+        height: 200px;
+        width: 95%;
+
+    }
+    .listings .add-product div{
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        justify-content: center;
+        width: 100%;
+        padding: 2%;
+    }
+    .listings .add-product i, .listings .add-product p {
+        align-items: center;
+        display: flex;
+        height: fit-content;
+        justify-content: center;
+        margin: auto 1%;
+        width: fit-content;
+    }
+    .listings .page-nav button {
+        font-size: 1em;
+        height: 50px;
+        margin-bottom: 5%;
+        width: 200px;
+    }
+}
+
 @media (max-width: 500px){
-    .listings .productos {
+    .listings .productos, .listings .add-product {
         width: 70%;
     }
 
@@ -1071,10 +1141,28 @@
     .listings .despliegue img {
         height: 350px;
     }
+
+    .listings .add-product div {
+        padding-top: 13%;
+        align-items: flex-start;
+    }
+
+    .listings .add-product i, .listings .add-product p {
+        margin: 0;
+        width: 100%;
+        
+    }
+
+    .listings .page-nav button {
+        font-size: 1em;
+        height: 40px;
+        margin-bottom: 5%;
+        width: 150px;
+    }
 }
 
 @media (max-width: 350px){
-    .listings .productos {
+    .listings .productos, .listings .add-product {
         width: 90%;
     }
 }
@@ -1089,7 +1177,6 @@
 
 .register article {
     width: 100%;
-    height: 70vh;
 }
 
 .register a {
@@ -1160,6 +1247,12 @@
     margin-bottom: 15px;
 }
 
+
+.register label[for="remember-login"] p {
+    font-size: 1em;
+    width: fit-content;
+}
+
 .register .signup {
     margin-top: 10px;
 }
@@ -1180,6 +1273,7 @@
 
 
 @media (max-width: 325px) {
+
     .register label{
         justify-content: center;
     }
@@ -1191,7 +1285,8 @@
 }
 
 
-@media (max-width: 430px) {
+@media (max-width: 499px) {
+
     #tnc {
         justify-content: center;
     }
@@ -1204,6 +1299,7 @@
 
 
 @media (min-width: 500px){
+
     .register button {
         min-width: 35%
     }
@@ -1219,13 +1315,16 @@
 
 
 @media (min-width: 550px){
+
     #tnc-statement {
         margin: 0 1%;
         width: auto;
     }
+
 }
 
 @media (min-width: 700px) {
+
     .register button {
         background-color: lightgray;
         border: none;
@@ -1251,7 +1350,6 @@
     }
 }
 
-
 @media (min-width: 1000px){
     .register label p {
         width: 12%;
@@ -1262,7 +1360,9 @@
 @media (min-width: 1200px) {
     .register article {
         align-items: stretch;
+        margin-bottom: 0;
         display: flex;
+        height: 70vh;
     }
 
     .register button {
@@ -1334,6 +1434,11 @@
     justify-content: center;
     margin: 0 1%;
     width: 120px;
+}
+
+.product-edit-field .product-photo img, .product-edit-field .mb-product-photo img {
+    height: 100%;
+    width: 100%;
 }
 
 .product-edit-field .end-buffer {
@@ -1508,6 +1613,7 @@
         height: 120px;
         justify-content: center;
         margin: 0 5px;
+        padding: 0 !important;
 
     }
 

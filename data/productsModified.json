@@ -574,29 +574,5 @@
     "price": 1422,
     "productDescription": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
     "productName": "integer aliquet massa id lobortis convallis tortor risus dapibus"
-  },
-  {
-    "id": 49,
-    "clothingColor": "purple",
-    "clothingSex": "F",
-    "clothingSize": "XS",
-    "clothingType": "jacket",
-    "inStock": 368,
-    "photos": "Casual_Hombre_Blanco.jpg",
-    "price": 2094,
-    "productDescription": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-    "productName": "fusce lacus purus aliquet at feugiat non"
-  },
-  {
-    "id": 50,
-    "clothingColor": "purple",
-    "clothingSex": "F",
-    "clothingSize": "XS",
-    "clothingType": "jacket",
-    "inStock": "367",
-    "photos": "Casual_Mujer_Negro.jpg",
-    "price": "2100",
-    "productDescription": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-    "productName": "fusce lacus purus aliquet at feugiat non"
   }
 ]

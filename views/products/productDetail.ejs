@@ -10,23 +10,17 @@
     </section>    
     <div class="cuerpo-detalle">
         <div class="imagen-detalle">
-            <% productosData%>
-            <img class="detalle-imagen" src="/images/products/<%=productosData[1].image%>" alt="camisa" >
-            <div class="opciones_imagen">
-                <img class="imagenes_opcion" src="/images/products/<%=productosData[1].image%>" alt="camisa">
-                <img class="imagenes_opcion" src="/images/products/<%=productosData[1].image%>" alt="camisa">
-                <img class="imagenes_opcion" src="/images/products/<%=productosData[1].image%>" alt="camisa">
-                <img class="imagenes_opcion" src="/images/products/<%=productosData[1].image%>" alt="camisa">
-            </div>
-
+            <% producto %>
+            <img class="detalle-imagen" src="/images/products/<%=producto.photos%>" alt="imagen de producto" >
         </div>
         <div class="descripcion-producto">
-            <div><%= productosData[1].product %></div>
-            <div>$<%= productosData[1].price %></div>
-            <div><%= productosData[1].description %>></div>
+            <div><%= producto.productName %></div>
+            <div><%= producto.clothingSex %></div>
+            <div>$<%= producto.price %></div>
+            <div><%= producto.productDescription %>></div>
             <div class="color">
                 <div>Color:</div>
-                <div><%= productosData[1].color %></div>
+                <div><%= producto.clothingColor %></div>
                 <div class="circulo_color"></div>
             </div>
             <div>Talla</div>
