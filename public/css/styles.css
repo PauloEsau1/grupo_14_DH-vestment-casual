@@ -845,7 +845,7 @@
     }
     #section-cuerpo, #carrusel img,
     #opciones-carrusel, #destacados {
-        max-width: 1000px;
+        /* max-width: 1000px; */
     }
     #carrusel img, #carrusel h4,
     #opciones-carrusel, #destacados {

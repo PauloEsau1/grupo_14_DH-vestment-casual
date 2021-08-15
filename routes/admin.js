@@ -32,13 +32,6 @@ router.delete('/:id', adminController.delete);
 
 
 /*Users */
-router.get('/agregar-usuario', adminController.addForm);
-router.post('/agregar-usuario', fileUpload.array('avatar'), adminController.addUser);
 
-router.get('/lista-usuarios/:page?', adminController.listAccess);
-router.get('/modificar-usuario/:id', adminController.modifyUser);
-router.put('/modificar-usuario/:id/:avatar?', fileUpload.array('avatar'), adminController.updateUser);
-
-router.delete('/borrar-usuario/:id', adminController.deleteUser);
 
 module.exports = router;

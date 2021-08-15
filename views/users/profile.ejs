@@ -3,5 +3,14 @@
 <%- include('../partials/head') %>
 <body class="register">
     <%- include('../partials/header') %>
+    <div style="margin-top: 10px;">
+        <h2> Hi <%= user.first_name %> </h2>
+        <img src = "/images/default.jpg">
+        <br>
+        <br>
+        <h2> <%= user.email %> </h2>
+    </div>
 </body>
+<!-- contenido del pie de pagina-->
+<%- include('../partials/footer') %>
 </html>

@@ -14,15 +14,21 @@
                 <br>
                 <label for="login-email">
                     <p><span>*</span>E-Mail:</p>
-                    <input id="login-email" type="email" name="user" required>
+                    <input id="login-email" type="email" name="user" 
+                    required>
                 </label>
+                <div>
+                    <% if (locals.ErrorLogin) { %>
+                        <%= ErrorLogin %>
+                    <% } %>
+                </div>
                 <label for="login-password">
                     <p><span>*</span>Contraseña:</p>
                     <input id="login-password" type="password" name="password" required>
                 </label>
                 <label for="remember-login">
                     <p><span></span>Recordar Sesión</p>
-                    <input id="remember-login" type="checkbox" name="remember-login">
+                    <input id="remember-login" type="checkbox" name="remember_login">
                 </label>
                 <button type="submit">Iniciar Sesión</button>
                 <p class="info"><a href="#forgot-password">¿Olvidaste tu contrseña?</a></p>
@@ -33,32 +39,46 @@
             <div class="subtitle">
                 <h2>¿Aún no tienes una cuenta? ¡Regístrate!</h2>
             </div>
-            <form>
+            <form action="/user/registro" method="POST">
                 <h3>Completa los siguientes datos:</h3>
                 <br>
                 <label for="first_name">
                     <p><span>*</span>Nombre:</p>
-                    <input id="first_name" type="text" name="first_name" required>
+                    <input id="first_name" type="text" name="first_name" 
+                    value= "<%= locals.oldData ? oldData.first_name : null %>" 
+                    required>
                 </label>
                 <label for="last_name">
                     <p><span>*</span>Apellido:</p>
-                    <input id="last_name" type="text" name="last_name" required>
+                    <input id="last_name" type="text" name="last_name"
+                    value= "<%= locals.oldData ? oldData.last_name : null %>" 
+                    required>
                 </label>
                 <label for="signup-email">
                     <p><span>*</span>E-Mail:</p>
-                    <input id="signup-email" type="email" name="user" required>
+                    <input id="signup-email" type="email" name="user" 
+                    value= "<%= locals.oldData ? oldData.user : null %>"
+                    required>               
                 </label>
+                <div>
+                    <% if (locals.oldData) { %>
+                        <%= 'Email ya existe' %>
+                    <% } %>
+                </div>
                 <label for="signup-password">
                     <p><span>*</span>Contraseña:</p>
-                    <input id="password" type="password" name="password" required>
+                    <input id="password" type="password" name="password1" 
+                     required>
                 </label>
                 <label for="signup-password-confirm">
                     <p><span>*</span>Confirmar<br>Contraseña:</p>
-                    <input id="signup-password-confirm" type="password" name="password" required>
+                    <input id="signup-password-confirm" type="password" name="password2" 
+                    required>
                 </label>
                 <label id="tnc" for="accept-tnc">   
                     <input id="accept-tnc" type="checkbox" name="yes" required value="yes"><p id="tnc-statement"><span>*</span>Acepto los <a href="#terms-and-conditions">términos y condiciones</a></p><br>  
                 </label>
+
                 <button type="submit">Crear Cuenta</button>
                 <div id="#signup-ends"></div>
             </form>

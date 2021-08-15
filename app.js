@@ -4,6 +4,10 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const methodOverride = require('method-override');
+const session = require('express-session');
+const cookies = require('cookie-parser');
+
+const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 
 const app = express();
 
@@ -15,7 +19,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride('_method'));
-
+app.use(session({
+    secret: "Es un secreto",
+    resave: false,
+    saveUninitialized:false
+}));
+app.use(cookies());
+app.use(userLoggedMiddleware);  // este debe ir despues de la sesion
 
 const indexRouter = require('./routes/index');
 const userRouter = require('./routes/user');
