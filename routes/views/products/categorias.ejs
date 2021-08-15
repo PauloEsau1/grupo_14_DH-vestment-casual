@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head') %>
+<body>
+    <%- include('../partials/header') %>
+    <section id="section-path-nav">
+        <div>
+            <h3>Home | Género | Categorías | <%= categoria %> </h3>
+        </div>
+    </section>  
+    
+    
+    <div class="categorias-cuerpo">
+        <div class="categorias-categorias">
+            <div class="categorias-tipo">
+                <div class="categorias-nombre">Jeans</div>
+            </div>
+            <div class="categorias-tipo">
+                <div class="categorias-nombre">Playeras</div>
+            </div>
+            <div class="categorias-tipo">
+                <div class="categorias-nombre">Pants</div>
+            </div>
+            <div class="categorias-tipo">
+                <div class="categorias-nombre">Chamarras</div>
+            </div>
+        </div>
+        <div class="categorias-desplegar">
+            <div class="categorias-filtro">
+                <div>Ordenar por</div>
+                <select class="categorias-ordenar" name="select" id="ordena">
+                    <option value="seleccion">Precio alto</option>
+                    <option value="seleccion">Precio bajo</option>
+                </select>
+            </div>
+
+            <div id="categoria-destacados">
+                <h1><%= categoria %></h1>
+                <div id="Ronda-productos-destacados">
+                    <% for (let i = 2 ; i < productData.length ; i ++) { %>
+                        <a href="/detalle-producto/<%=productData[i].id%>"><article class="producto">
+                            <img src="/images/products/<%=productData[i].photos%>" alt="imagen de producto">
+                            <p> <%= productData[i].productDescription.substring(0,25) %></p>
+                            <p> $<%= productData[i].price %></p>
+                        </article></a>          
+                    <% } %>                  
+                </div>                              
+            </div> 
+
+            <div class="categorias-siguiente">Siguiente
+            </div>
+
+        </div>
+    </div>
+
+
+
+</body>
+<%- include('../partials/footer') %>
+</html>

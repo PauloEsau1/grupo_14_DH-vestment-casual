@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head')%>
+    <%- include('../partials/header')%>
+   <body class="listings">
+        <h1 class="title">Usuarios</h1>
+        
+        <div class="despliegue">
+                <button class="add-product" type="button" onclick="location.href='/admin/agregar-usuario'">
+                    <div>
+                        <i class="fa fa-plus"></i>
+                        <p>Agregar Nuevo</p>
+                    </div>
+                </button>
+                <%  let start = 23 * (page - 1);
+                    let end;
+                    if (userData.length >= 23 * page) {
+                        end = 23 * page;
+                    }
+                    else {
+                        end = userData.length;
+                    }
+                    for (let i = start; i < end; i ++) { %>
+                        <div class="productos">
+                            <img src="/images/products/<%=userData[i].photos[0]%>" alt="imagen de producto">
+                            <div class="data">
+                                <p>ID: <%= userData[i].id %></p>
+                                <p>Prenda: <%= dict.type[userData[i].clothingType] %></p>
+                                <p>Color: <%= dict.color[userData[i].clothingColor] %></p>
+                                <p>Talla: <%= dict.size[userData[i].clothingSize] %></p>
+                                <p>Precio: $<%= userData[i].price %>.00</p>
+                                <button class="action" type="button" onclick="location.href='/admin/modificar-producto/<%=userData[i].id%>'">Editar</button>
+                                <form action="/admin/<%=userData[i].id%>?_method=DELETE" method="POST" style="display: inline-flex">    
+                                    <button class="action" type="submit">Eliminar</button>
+                                </form>
+                            </div>
+                        </div>
+                    <% } 
+                %>
+        </div>
+        <% if (end < userData.length) {
+            let next = parseInt(page) + 1;
+            %>
+                <div class="page-nav">
+                    <%if (page > 1) {
+                        let prev = parseInt(page) - 1; %>
+                    <button class="action" type="button" onclick="location.href='/admin/lista-productos/<%=prev%>'">Anterior</button>
+                    <%}%>
+                    <button class="action" type="button" onclick="location.href='/admin/lista-productos/<%=next%>'">Siguiente</button>
+                </div>
+        <%}
+        else {
+            let prev = parseInt(page) - 1; %>
+            <div class="page-nav">
+                <button class="action" type="button" onclick="location.href='/admin/lista-productos/<%=prev%>'">Anterior</button>
+            </div>
+        <%}%>
+    </body>
+</html>
