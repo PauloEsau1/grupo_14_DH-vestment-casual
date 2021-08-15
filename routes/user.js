@@ -1,6 +1,23 @@
 const express = require('express');
 const router = express.Router();
+const multer = require('multer');
+const PATH = require('path');
+const bodyParser = require('body-parser');
+const jsonParser = bodyParser.json();
+
 const { body } = require('express-validator');
+let multerDS = multer.diskStorage({
+    destination: (req, file, callback) => {
+        let folder = PATH.join(__dirname, '../public/images/users')
+        callback(null, folder);
+    },
+
+    filename: (req, file, callback) => {
+        let name = 'user-img-' + Date.now() + PATH.extname(file.originalname);
+        callback(null, name);
+    }
+});
+let fileUpload = multer({storage: multerDS});
 const userController = require('../controllers/userController');
 
 const adminController = require('../controllers/adminController');
